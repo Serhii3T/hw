@@ -1,0 +1,84 @@
+body{
+	font: 500 30px "Tebuchet MC", Tebuchet, Arial, sans-serif;
+	color: #F9F9F9;
+	background: #c9d4e6;
+	margin: 0;
+}
+
+.btn-page {
+	background-color: black;
+	color: #ffffff;
+	padding: 10px;
+	margin: 0 0 10px 10px;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-radius: 10px;
+	font-size: 20px;
+	line-height: 70px;
+}
+
+.h {
+	padding-left: 200px;
+}
+
+.head {
+	display: flex;
+	background: #495f83;
+	text-align: center;
+	padding: 20px 0;
+	color: #EB7E7D;
+	border: 2px solid gray;
+}
+
+.head h1 {
+	font-size: 36px;
+	font-weight: 600px;
+	margin: 0;
+}
+
+.head h4 {
+	font-size: 24px;
+	font-weight: 400px;
+	margin: 0;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 700px;
+	padding: 30px;
+	margin-top: 20px;
+	background-color: #c6bee7;
+	border: 2px solid gray;
+}
+
+.form-list {
+	list-style: none;
+}
+
+.form-list input[type="checkbox"] {
+  width: 26px;
+  height: 26px;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+label {
+	cursor: pointer;
+}
+
+.form-list input[type='checkbox']:checked + label {
+  text-decoration: line-through;
+  color: #A3A0B5;
+}
+
+.foot {
+	background: #495f83;
+	text-align: center;
+	padding: 30px 30px;
+	color: #EB7E7D;
+	max-width: 700px;
+	margin: 30px auto;
+	border: 2px solid gray;
+}

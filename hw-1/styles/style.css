@@ -1,0 +1,152 @@
+body {
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+.sidebar {
+    background-color: dodgerblue;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.my-photo {
+    height: 300px;
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin: 20px;
+}
+
+.sidebar h4 {
+    margin: 10px 0;
+    color: white;
+    font-weight: bold;
+}
+
+.sidebar p {
+    margin: 0 0 10px 0;
+    color: white;
+}
+
+.sidebar ul {
+    color: white;
+}
+
+.info {
+    padding: 20px;
+
+}
+.info h1 {
+    margin: 0 0 10px 0;
+}
+.info p {
+    margin: 0 0 10px 0;
+    line-height: 1.6;
+    font-size: 20px;
+}
+.info .header {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid gray;
+}
+
+.block-info {
+    display: flex;
+}
+
+.block-info .icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.main .icon2 {
+    width: 30px;
+    height: 30px;
+    margin: 10px 20px 10px 0;
+    display: inline;
+    vertical-align: middle;
+}
+
+.main .page {
+    margin: 10px 0;
+    font-weight: bold;
+    display: inline;
+    vertical-align: middle;
+}
+
+.block-item {
+    margin-bottom: 5px;
+    background-color: rgba(247, 216, 175, 0.349);
+    display: flex;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.block-item .city {
+    color: blue;
+    margin-right: 20px;
+}
+
+.block-item .data {
+    margin-right: 20px;
+    width: 180px;
+}
+
+.block-item .post-city {
+    margin-left: 10px;
+}
+
+.info .main {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid gray;
+}
+
+.last .icon2 {
+    width: 30px;
+    height: 30px;
+    margin: 10px 20px 10px 0;
+    display: inline;
+    vertical-align: middle;
+}
+
+.last .page {
+    margin: 10px 0;
+    font-weight: bold;
+    display: inline;
+    vertical-align: middle;
+}
+
+.info .last {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid gray;
+}
+
+.ltend .icon2 {
+    width: 30px;
+    height: 30px;
+    margin: 10px 20px 10px 0;
+    display: inline;
+    vertical-align: middle;
+}
+
+.ltend .page {
+    margin: 10px 0;
+    font-weight: bold;
+    display: inline;
+    vertical-align: middle;
+}
+
+.btn-lang {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+}

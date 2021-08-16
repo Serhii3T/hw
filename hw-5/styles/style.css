@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: black;
+  background-image: url("/hw-5/Images/12grid.png");
+  height: 420px;
+  width: 1920px;
+  padding: 0px;
+  margin: 0px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.center {
+  display: block;
+  text-align: center;
+}
+
+header {
+  padding: 120px 902px 51px 906px;
+}
+
+/* .text center {
+  padding: ;
+} */
+
+.border {
+  padding: 6px 845px 21px 845px;
+}
+
+.social {
+  padding: 0 30px 89px 30px;
+}
+
+.social img {
+  margin: 0 15px 0 15px;
+}

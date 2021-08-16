@@ -1,0 +1,77 @@
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+	font: 500 20px "Tebuchet MC", Tebuchet, Arial, sans-serif;
+	color: #000000;
+	background: #c9d4e6;
+	margin: 0;
+}
+
+.btn-page {
+	background-color: black;
+	color: #ffffff;
+	padding: 10px;
+	margin: 0 0 10px 10px;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-radius: 10px;
+	font-size: 20px;
+	line-height: 70px;
+}
+
+.h {
+	margin-left: 350px;
+}
+
+.head {
+	background-color: #b5cef8;
+	display: flex;
+	text-align: center;
+	padding: 20px 0;
+	color: #EB7E7D;
+	border: 2px solid gray;
+}
+
+.head h1 {
+	font-size: 36px;
+	font-weight: 600px;
+	margin: 0;
+}
+
+.h-link {
+	margin-left: 300px;
+}
+
+ol {
+	text-align: left;
+}
+
+.main {
+	margin: 0 auto;
+	max-width: 90%;
+	padding: 20px;
+	margin-top: 20px;
+	background-color: #eaf0d854;
+	border: 2px solid rgb(246, 239, 239);
+}
+
+.foot {
+	background: #b5cef8;
+	text-align: center;
+	padding: 30px 30px;
+	color: #EB7E7D;
+	max-width: auto;
+	margin: 30px auto;
+	border: 2px solid gray;
+}
+
+.nav-footer {
+	display: inline-block;
+	margin: 0 auto;
+}
