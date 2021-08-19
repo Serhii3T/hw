@@ -1,43 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./styles/normalize.css" />
-  <link rel="stylesheet" href="./styles/style.css" />
-  <link rel="shortcut icon" href="./favicon.png">
-</head>
-<body>
-  <div class="container" background="../images/12grid.png">
-    <!-- head -->
-    <header class="center">
-      <img class="icon" src="./images/logo.png" alt="Kasper">
-    </header>
-    <!-- main -->
-    <main>
-      <div class="text center">
-        <img class="icon" src="./images/social.png" alt="text">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" 
+    rel="stylesheet">
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <title>HOMEWORK#5</title>
+  </head>
+  <body>
+    <!-- wrapper body -->
+    <div class="wrapper">
+      <!-- header -->
+      <header class="header">
+        <!-- header-wrapper -->
+        <div class="header-wrapper">
+          <img class="logo" src="./images/logo.png" alt="kasper" />
+        </div>
+        <!-- /.header-wrapper -->
+      </header>
+      <!-- /.header -->
+      <!-- main -->
+      <main class="main">
+        <div class="main-wrapper">
+          <h2 class="h-text">WE ARE SOCIAL</h2>
+        </div>
+        <!-- /.main-wrapper -->
+      </main>
+      <!-- /.main -->
+      <!-- separation -->
+      <div class="separator">
+        <hr class="separator-wpapper">
       </div>
-      <!-- /.text -->
-      <div class="border center">
-        <img class="icon" src="./images/separator.png" alt="border">
+      <!-- /.separation -->
+      <!-- navigation -->
+      <div class="navigation">
+        <nav class="nav-wrapper">
+          <ul class="list-nav">
+            <li class="line">
+              <a class="socialweb" target="_blank" href="https://facebook.com" title="click to go to facebook"> 
+                <img src="./images/facebook.png" alt="facebook">
+              </a>
+            </li>
+            <li class="line">
+              <a class="socialweb" target="_blank" href="https://twitter.com/?lang=ru" title="click to go to twitter"> 
+                <img src="./images/tweter.png" alt="twitter">
+              </a>
+            </li>
+            <li class="line">
+              <a class="socialweb" target="_blank" href="https://www.google.com/" title="click to go to google"> 
+                <img src="./images/google.png" alt="google">
+              </a>
+            </li>
+            <li class="line">
+              <a class="socialweb" target="_blank" href="https://dribbble.com/" title="click to go to dribbble"> 
+                <img src="./images/dribble.png" alt="dribbble">
+              </a>
+            </li>
+            <!-- /.line -->
+          </ul>
+          <!-- /.list -->
+        </nav>
+        <!-- /.nav-wrapper -->
       </div>
-      <!-- /.border -->
-      <div class="social center">
-      <img class="icon" src="./images/facebook.png" alt="facebook">
-      <img class="icon" src="./images/tweter.png" alt="twitter">
-      <img class="icon" src="./images/google.png" alt="google">
-      <img class="icon" src="./images/dribble.png" alt="dribble">
-      </div>
-      <!-- /.social -->
-    </main>
-    <!-- footer -->
-    <footer class="center">
-      <img class="icon" src="./images/kasper.png" alt="copyright">
-    </footer>
-  </div>
-  <!-- /.container -->
-</body>
+      <!-- /.navigation -->
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer-wrapper">
+          <p>
+            &#169
+            <span class="time">2014</span> -
+            <span class="color-blue">Kasper</span> All Right Reserved
+          </p>
+        </div>
+        <!-- /.footer-wrapper -->
+      </footer>
+      <!-- /.footer -->
+    </div>
+    <!-- /.wrapper body-->
+  </body>
 </html>
