@@ -1,8 +1,16 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.top .btn-page {
+body {
+  background-color: #990909;
+}
+
+/* header */
+
+.btn-page {
 	background-color: black;
 	color: #ffffff;
 	padding: 5px 10px;
@@ -12,56 +20,57 @@
 	border-radius: 10px;
 }
 
-.top {
+.title {
 	display: flex;
   justify-content:space-between;
   margin: 10px 0 0 10px;
 }
 
-body {
-  background-color: #990909;
-}
 
-
-.topic {
+.title-logo {
   margin: 0;
 }
 
+/* navigation */
+
 .navigate {
   background-color: black;
+  color: white;
   padding: 0px;
   margin-left: 8px;
+  text-decoration: none;
 }
 
-nav ul {
+.picture {
+  max-width: 150px;
+  border: 0;
+}
+
+.nav-img {
   display: flex;
   justify-content: space-around;
   align-items: center;
   list-style: none;
+  padding-top: 20px;
   margin: 0;
-  padding: 0;
 }
 
-nav ul a img {
-  max-width: 150px;
-  display: block;
-  margin-bottom: 4px;
-  margin-top: 20px;
-}
-
-nav ul a {
+.nav-text {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  color: white;
+  list-style: none;
   text-decoration: none;
-  margin-bottom: 4px;
+  padding: 0 0 4px 0;
 }
 
-/* advice ( .main-conteiner {font-size: 16px;} ) */
+/* end of navigation block */
 
-.main-content {
+/* end of header block */
+
+/* content */
+
+.content-wrapper {
   display: flex;
   font-size: 18px;
 }
@@ -74,39 +83,53 @@ nav ul a {
   min-height: 290px;
 }
 
-.sidebar a {
+.link-sdbr {
   color: #FF5B00;
 }
 
-.content {
+/* main */
+
+.main {
   color: white;
+  padding: 20px 10px 0 2px;
 }
+
+/* end of main block */
 
 .aside {
   background-color: #E3DDDD;
   max-width: 150px;
   width: 100%;
   margin: 2px;
-  min-height: 290;
+  min-height: 290px;
   padding: 1px;
 }
 
-.aside h4 {
+.aside-title {
   background-color: #BDBDBD;
-  margin: 0;
+  margin-bottom: 10px;
   text-align: center;
 }
 
-.aside hr {
-  max-width: 75px;
+.aside-m {
+  margin-bottom: 15px;
 }
 
-/* advice ( .bot {font-size: 16px;} ) */
+.separator {
+  max-width: 50%;
+  margin: 0 25% 15px 25%;
+}
 
-.bot {
+/* end of content block */
+
+/* footer */
+
+.footer-wrapper {
   background: #E95B11;
   color: white;
   font-size: 20px;
   text-align: center;
   margin: 10px 5px 30px 10px;
 }
+
+/* end of footer block */
