@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all .1s ease-in;
+}
+
+
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  background: #3B3F45;
+}
+
+/* header */
+
+.header-wrapper {
+  background-color: #4A4F56;
+  color: #EB7E7F;
+  text-align: center;
+}
+
+.header-title {
+  margin: 0px;
+  padding-top: 20px;
+}
+
+.header-title2 {
+  font-weight: normal;
+  padding: 10px 0 20px 0;
+}
+
+/* end of header block */
+
+/* main */
+
+.list {
+  background: #88839E;
+  color: white;
+  margin: 40px auto;
+  max-width: 700px;
+  border: 2 solid black;
+}
+
+.list-form {
+  list-style: none;
+  font-size: 24px;
+}
+
+label {
+  cursor: pointer;
+  display: block;
+  padding: 15px;
+}
+
+.text-small {
+  font-size: 70%;
+	color: inherit;
+	vertical-align: middle;
+  color: #C4C8CF;
+}
+
+.list-form input[type="checkbox"] {
+  width: 26px;
+  height: 26px;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.list-form input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: #C4C8CF;
+}
+
+.list-form [type="checkbox"]:checked + span {
+	text-decoration: line-through;
+	color: #C4C8CF;
+}
+
+.list-form li {
+  background: #88839E;
+  border: 0 solid white;
+}
+
+.list-form li:nth-child(2n) {
+  background-color: #7A7593;
+}
+
+.list-form li:hover {
+	background: #625E77;
+	border-width: 4px 0; 
+}
+
+.list-form li:active {
+	background: red;
+}
+
+.text-small::before {
+  content: "(";
+}
+
+.text-small::after {
+  content: ")";
+}
+
+/* end of main block */
+
+/* footer */
+
+.footer-wrapper {
+	background: #4A4F56;
+	text-align: center;
+	padding: 20px 0;
+	color: #EB7E7D;
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.footer-title {
+  font-weight: 400;
+}
+
+/* end of footer block */
