@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background-color: #414453;
+  color: #edf1fa;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.06em;
+}
+
+.container {
+  margin: 135px 0 0 325px;
+  position: relative;
+}
+
+/* header */
+
+.header-wrapper {
+  margin-bottom: 25px;
+}
+
+.header-title {
+  font-size: 156px;
+  line-height: 190px;
+  width: 855px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+/* end of header block */
+
+/* main */
+
+.main-wrapper {
+  max-width: 855px;
+}
+
+.content {
+  font-size: 24px;
+  line-height: 143%;
+}
+
+/* end of main block */
+
+/* top block circle */
+
+.block-top {
+  width: 468px;
+  height: 468px;
+  position: absolute;
+  top: -62px;
+  right: 154px;
+  z-index: 0;
+}
+
+.circle1,
+.circle-1,
+.circle-2,
+.circle-3,
+.circle-4,
+.circle-5,
+.circle-6,
+.circle-7,
+.circle-8 {
+  background-color: #ff545b;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle2,
+.circle-9 {
+  background-color: #ffcf6d;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle1 {
+  width: 468px;
+  height: 468px;
+}
+
+.circle2 {
+  width: 244px;
+  height: 244px;
+  top: calc(50% - 122px);
+  left: calc(50% - 122px);
+}
+
+.block-bottom {
+  position: absolute;
+  width: 715px;
+  height: 620px;
+  right: -93px;
+  bottom: -76px;
+  z-index: 0;
+}
+
+.circle-1 {
+  width: 130px;
+  height: 130px;
+  top: 0;
+  left: calc(50% - 65px);
+}
+
+.circle-1:before {
+  content: "";
+  height: 53px;
+  width: 6px;
+  position: absolute;
+  background-color: gray;
+  right: 62px;
+  bottom: -53px;
+  transform: rotate(-180deg);
+}
+
+.circle-2 {
+  width: 170px;
+  height: 170px;
+  top: 45px;
+  right: 75px;
+}
+
+.circle-2:before {
+  content: "";
+  height: 58px;
+  width: 6px;
+  position: absolute;
+  background-color: gray;
+  left: 0px;
+  bottom: -23px;
+  transform: rotate(-135deg);
+}
+
+.circle-3 {
+  width: 156px;
+  height: 156px;
+  right: 0;
+  top: calc(50% - 78px);
+}
+
+.circle-3:before {
+  content: "";
+  height: 79px;
+  width: 6px;
+  position: absolute;
+  background-color: gray;
+  left: -42px;
+  bottom: 35px;
+  transform: rotate(-90deg);
+}
+
+.circle-4 {
+  width: 170px;
+  height: 170px;
+  right: 71px;
+  bottom: 43px;
+}
+
+.circle-4:before {
+  content: "";
+  height: 58px;
+  width: 6px;
+  position: absolute;
+  background-color: gray;
+  left: 0px;
+  top: -24px;
+  transform: rotate(-45deg);
+}
+
+.circle-5 {
+  width: 128px;
+  height: 128px;
+  bottom: 0;
+  left: calc(50% - 64px);
+}
+
+.circle-5:before {
+  content: "";
+  height: 58px;
+  width: 6px;
+  position: absolute;
+  background-color: gray;
+  right: 61px;
+  top: -58px;
+  transform: rotate(0deg);
+}
+
+.circle-6 {
+  width: 170px;
+  height: 170px;
+  bottom: 45px;
+  left: 78px;
+}
+
+.circle-6:before {
+  content: "";
+  height: 58px;
+  width: 6px;
+  position: absolute;
+  background-color: gray;
+  right: 2px;
+  top: -23px;
+  transform: rotate(45deg);
+}
+
+.circle-7 {
+  width: 156px;
+  height: 156px;
+  left: 0;
+  top: calc(50% - 73px);
+}
+
+.circle-7:before {
+  content: "";
+  height: 78px;
+  width: 6px;
+  position: absolute;
+  background-color: gray;
+  right: -42px;
+  bottom: 35px;
+  transform: rotate(90deg);
+}
+
+.circle-8 {
+  width: 170px;
+  height: 170px;
+  top: 44px;
+  left: 78px;
+}
+
+.circle-8:before {
+  content: "";
+  height: 58px;
+  width: 6px;
+  position: absolute;
+  background-color: gray;
+  right: 2px;
+  bottom: -23px;
+  transform: rotate(135deg);
+}
+
+.circle-9 {
+  width: 256px;
+  height: 256px;
+  top: calc(50% - 128px);
+  left: calc(50% - 128px);
+}
+
+/* end of circle block */
