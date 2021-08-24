@@ -13,6 +13,7 @@ body {
   justify-content: space-around;
   width: 100%;
   margin-top: 50px;
+  flex-wrap: wrap;
 }
 
 .column {
