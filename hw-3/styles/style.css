@@ -73,6 +73,11 @@ label {
   color: #A3A0B5;
 }
 
+.form-list input[type='checkbox']:checked + span {
+	text-decoration: line-through;
+	color: #A3A0B5;
+}
+
 .foot {
 	background: #495f83;
 	text-align: center;

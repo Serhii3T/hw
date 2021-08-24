@@ -71,7 +71,7 @@ body {
   background-color: red;
   border-color: red;
   color: white;
-  transform: scale(1.2) translateX(-30px);
+  transform: scale(1.1);
   animation: shake-box-shadow 2s infinite alternate;
 }
 
