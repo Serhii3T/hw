@@ -112,8 +112,8 @@ li {
   opacity: 0.5;
 }
 
-li:hover {
-  opacity: 1 !important;
+.cities li:hover {
+  opacity: 1;
 }
 
 .footer {
