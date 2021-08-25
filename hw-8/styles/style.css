@@ -9,6 +9,7 @@ body {
   background-color: #fdde7e;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 /* blocks */
@@ -18,21 +19,21 @@ body {
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  width: 1200px;
-  height: 600px;
+  min-width: 1200px;
+  min-height: 600px;
   flex-wrap: wrap;
 }
 
 .block1,
 .block3 {
-  width: 360px;
-  height: 440px;
+  min-width: 360px;
+  min-height: 440px;
   background-color: white;
 }
 
 .block2 {
-  width: 360px;
-  height: 500px;
+  min-width: 360px;
+  min-height: 500px;
   background-color: white;
 }
 
