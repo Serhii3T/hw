@@ -51,42 +51,16 @@ body {
 .title-price2 {
   color: #02995b;
   font-size: 60px;
-  margin: 45px 0 35px 0;
+  margin: 40px 0;
 }
 
 /* end of h1 block */
 
 /* pictures */
 
-.picture {
-  width: 150px;
+.coffee {
   height: 135px;
-  position: relative;
-  margin: 0 auto;
-}
-
-.smoke {
-  width: 50px;
-  height: 46px;
-  position: absolute;
-  top: 0;
-  right: calc(50% - 25px);
-}
-
-.cup {
-  width: 135px;
-  height: 77px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-.bean {
-  width: 36px;
-  height: 45px;
-  position: absolute;
-  bottom: 18px;
-  left: 56px;
+  width: 134px;
 }
 
 /* end of pictures block */
