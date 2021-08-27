@@ -63,6 +63,12 @@ body {
   width: 134px;
 }
 
+.svg {
+  height: 135px;
+  width: 134px;
+  fill:silver
+}
+
 /* end of pictures block */
 
 /* text */
