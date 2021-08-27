@@ -1,4 +1,4 @@
-body {
+.wrapper {
   background-color: #E2E7EC;
   display: flex;
   justify-content: center;
@@ -22,21 +22,35 @@ body {
 }
 
 .column {
+  display: flex;
+  flex-direction: column;
   width: 360px;
-  height: 540px;
-  background-color: white;
+  height: auto;
+  min-height: 540px;
+}
+
+p {
+  margin-bottom: 0;
 }
 
 .column__text {
+  display: flex;
+  flex-direction: column;
   padding: 25px;
+  height: 100%;
+  background-color: white;
 }
- 
-.column__text__data {
-  min-height: 40px;
+
+.column__text__data + .column__text__exposition {
+  margin-top: 30px;
 }
 
 .column__text__exposition {
-  min-height: 145px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin-top: 50px;
 }
 
 .column__text__p {
@@ -56,4 +70,27 @@ body {
 .minifoto {
   width: 54px;
   height: 54px;
+}
+
+.com-container {
+  max-width: 1140px;
+}
+
+.com-container .red-car {
+  width: 100%;
+}
+
+.picture img {
+  width: 100%;
+}
+
+.com-col {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+.wrapper2 {
+  background-color: #E2E7EC;
 }
