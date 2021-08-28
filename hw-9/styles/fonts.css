@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'pro-reg';
+  src: url(../fonts/proximanova/Proxima\ Nova\ Regular.otf) format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'pro-reg-itl';
+  src: url(../fonts/proximanova/Proxima\ Nova\ Regular\ Italic.otf) format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'play-reg';
+  src: url(../fonts/playfairdisplay/PlayfairDisplay-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
