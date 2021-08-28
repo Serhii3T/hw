@@ -1,95 +1,53 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
+body {
+  background-color: rgb(233, 233, 233);
+}
+
+.com-container {
+  min-width: 1600px;
+  min-height: 940px;
+  padding: 120px;
+  font-size: 18px;
+  font-family: 'lato-light', sans-serif;
+}
+
+.col-12_title {
+  font-family: 'play-reg', sans-serif;
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+.col-12_p {
+  line-height: 34px;
+  letter-spacing: 2px;
+  color: #C3C3C3;
   margin: 0;
 }
 
-body {
-  background-color: #464F54;
-}
-
-.wrapper {
-  display: flex;
-  justify-content: center;
-  max-width: 1060px;
-  background-color: white;
-  position: relative;
-  margin: 150px auto;
-  width: 100%;
-  height: auto;
-}
-
-.header {
-  position: absolute;
-  left: 255px;
-  top: -100px;
-}
-
-.header-top {
-  background-color: black;
-  padding: 45px 0 45px 65px;
-  min-width: 865px;
-  min-height: 185px;
-}
-
-.header-top__p {
-  font-size: 15px;
-  color: #777777;
-  font-family: 'pro-reg', sans-serif;
-}
-
-.header-top__h2 {
-  color: white;
-  font-size: 48px;
-  padding-bottom: 10px;
+p:first-of-type:first-letter {
+  color: black;
   font-family: 'play-reg', sans-serif;
+  font-size: 110px;
+  line-height: 0.85em;
+  margin-right: 20px;
+  float:left;
+  align-items: baseline;
 }
 
-.header-top__hr {
-  color: #303030;
+.col-12_p-z {
+  font-size: 24px;
+  margin-bottom: 35px;
 }
 
-.header-bot {
-  background-color: #F9BE2D;
-  min-height: 75px;
-  min-width: 800px;
-  position: absolute;
-  left: 65px;
-  display: flex;
-  align-items: center;
-  padding-left: 25px;
+.col-12-span {
+  line-height: 40px;
+  font-size: 60px;
 }
 
-.icon {
-  padding: 0 15px;
-  max-width: 60px;
-  max-height: 30px;
-}
-
-.main-text {
-  margin: 0 65px;
-  padding: 200px 60px 10px 60px;
-  border-left: 2px solid #E8EBED;
-  font-family: 'play-reg', sans-serif;
-  font-size: 27px;
-}
-
-.main-text__autor {
-  color: #777777;
-  font-family: 'pro-reg', sans-serif;
-  font-size: 20px;
-}
-
-.main-text__h1 {
-  font-size: 78px;
-  font-family: 'pro-reg', sans-serif;
-  margin-top: 35px;
-  margin-bottom: 0px;
-}
-
-.main-text__q {
-  color: #777777;
-  font-family: 'pro-reg-itl', sans-serif;
-  font-size: 30px;
-  margin-bottom: 50px;
+.col-12_btn {
+  text-decoration: none;
+  letter-spacing: 3px;
+  padding: 25px 75px;
+  border: 2px solid #EAA258;
+  color: #EAA258;
+  font-family: 'lato-bold', sans-serif;
 }

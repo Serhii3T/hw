@@ -18,3 +18,17 @@
   font-weight: 400;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'lato-light';
+  src: url(../fonts/lato/Lato-Light.ttf) format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lato-bold';
+  src: url(../fonts/lato/Lato-Bold.ttf) format('truetype');
+  font-weight: 700;
+  font-style:normal;
+}
