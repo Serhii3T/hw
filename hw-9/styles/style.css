@@ -27,10 +27,9 @@ p:first-of-type:first-letter {
   color: black;
   font-family: 'play-reg', sans-serif;
   font-size: 110px;
-  line-height: 0.85em;
+  line-height: 0.85;
   margin-right: 20px;
   float:left;
-  align-items: baseline;
 }
 
 .col-12_p-z {
