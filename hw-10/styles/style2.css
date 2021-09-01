@@ -1,14 +1,32 @@
+body {
+  background-color: #F6F6F6;
+}
+
 .container {
   max-width: 1170px;
 }
-
+.col-3 {
+  padding: 0 15px;
+}
 .com-header {
   margin: 100px auto 55px auto;
+  width: 35%;
 }
 
 .main-title {
   font-size: 34px;
 }
+
+.main-title::before {
+  width: 45px;
+  height: 4px;
+  position: absolute;
+  background-color: black;
+  content: '';
+  bottom: -15px;
+  left: calc(50% - 22.5px);
+}
+
 
 .main-title,
 .com-name {
@@ -27,23 +45,24 @@
 }
 
 .sub-title {
-  margin-top: 25px;
+  margin-top: 60px;
   font-size: 16px;
   line-height: 24px;
 }
 
 .com-col {
-  width: 270px;
   min-height: 270px;
 }
 
 .com-card {
   cursor: pointer;
-  min-width: 270px;
-  min-height: 270px;
+  max-width: 270px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
-.com-front,.com-back {
+.com-front, .com-back {
   backface-visibility: hidden;
   transition: .6s linear;
 }
@@ -55,6 +74,18 @@
 .com-back {
   background: #00B6DE;
   transform: perspective(270px) rotateY(180deg);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .back-content {
@@ -65,7 +96,7 @@
   margin: 2px 0;
 }
 
-.com-btn { 
+.com-btn {
   text-decoration: none;
   background: #00CCE9;
   width: 42px;
@@ -78,7 +109,7 @@
   transition: 0.2s linear;
 }
 
-.com-btn:hover .font-a{
+.com-btn:hover .font-a {
   transform: scale(1.3);
   color: #f1f1f1;
 }
@@ -94,10 +125,6 @@
 
 .com-card:hover > .com-back {
   transform: perspective(270px) rotateY(0deg);
-}
-
-.name-position {
-  margin-top: 290px;
 }
 
 .com-name {

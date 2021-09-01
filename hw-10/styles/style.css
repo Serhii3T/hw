@@ -17,11 +17,10 @@ body {
   line-height: 25px;
 }
 
-.com-container {
-  max-width: 1170px;
-  min-height: 865px;
+.container-inner {
+  max-width: 1194px;
 }
-  
+
 .com-header {
   margin: 45px auto 0 auto;
   padding: 45px 0;
@@ -41,32 +40,33 @@ body {
 
 .sub-title {
   font-size: 17px;
-  margin: 0;
 }
 
 .com-col {
-  max-width: 370px;
-  min-height: 310px;
+  margin-bottom: 30px;
 }
 
-.com-col:hover {
+.col_wrapper:hover {
   animation: box-shadow .5s infinite alternate;
 }
 
 .col_wrapper {
   max-width: 370px;
+  margin: 0 auto;
+  cursor: pointer;
 }
 
-.picture {
-  max-width: 370px;
-  max-height: 310px;
+.info-block {
+  z-index: 10;
+  padding: 20px;
+  min-height: 310px;
 }
 
 .data {
-  width: 60px;
-  height: 60px;
   background-color: #2626267e;
-  margin: 30px;
+  margin: 10px 0 0 10px;
+  max-width: 60px;
+  min-height: 60px;
 }
 
 .data__day {
@@ -75,10 +75,6 @@ body {
 
 .data__mounth {
   font-size: 21px;
-}
-
-.info-text{
-  padding: 20px;
 }
 
 .info-text__heading {
@@ -90,7 +86,7 @@ body {
 }
 
 .com-footer {
-  margin-top: 65px;
+  margin-top: 35px;
 }
 
 .btn-info {
