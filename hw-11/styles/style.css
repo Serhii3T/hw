@@ -1,0 +1,147 @@
+.cahee__wrapper {
+  background-image: url(../images/cahee/1.png);
+  width: 1500px;
+  margin: 0 auto;
+}
+
+.custom-transition {
+  transition: .35s cubic-bezier(.4,0,.2,1);
+}
+
+.c-container {
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.line-small {
+  line-height: 25px;
+}
+
+.line-big {
+  line-height: 27px;
+}
+
+.font-light {
+  font-family: "raleway-light", sans-serif;
+}
+
+.font-bold {
+  font-family: "raleway-bold", sans-serif;
+}
+
+/* header */
+
+.header-cahee__wrapper {
+  min-height: 1000px;
+}
+
+/* header-top */
+.header-cahee__top {
+  padding: 63px 0;
+}
+
+/* logo */
+.logo {
+  width: fit-content;
+}
+
+.logo__text {
+  font-family: "pacifico-regular", sans-serif;
+  font-size: 50px;
+}
+/* end of logo block */
+
+/* navigation */
+.header-cahee__navigation__link {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  margin: 0 17px;
+  cursor: pointer;
+}
+
+.header-cahee__navigation__link:last-child {
+  margin-right: 0;
+}
+/* end of navigation block */
+
+/* end of header-top block */
+
+/* header bottom */
+.header-cahee__bottom__wrapper {
+  padding-top: 208px;
+}
+
+.header-cahee__bottom__title {
+  font-family: "raleway-extra-bold", sans-serif;
+  font-size: 60px;
+  margin-bottom: 36px;
+}
+
+.header-cahee__bottom__text {
+  font-size: 17px;
+  margin-bottom: 40px;
+}
+
+.header-cahee__bottom__link{
+  background-color: #FF6033;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  min-width: 200px;
+  width: 100%;
+  padding: 15px 26px;
+}
+
+.allotment {
+  position: relative;
+}
+
+.allotment::before {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: #FF8866;
+  position: absolute;
+  top: -9px;
+}
+/* end of header-bottom block */
+
+/* end of header block */
+
+/* main */
+
+/* picture */
+.main-cahee__picture {
+  max-width: 585px;
+  padding: 35px 0;
+}
+
+.main-cahee__picture__img {
+  left: -50px;
+}
+/* end of picture block */
+
+/* about */
+.main-cahee {
+  background-color: #00B1B1;
+}
+
+.main-cahee__about {
+  padding: 202px 10px 220px 85px;
+}
+
+.main-cahee__about__main-title {
+  font-size: 90px;
+  margin-bottom: 46px;
+}
+
+.main-cahee__about__text {
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+/* end of about block */
+
+/* end of main block */
