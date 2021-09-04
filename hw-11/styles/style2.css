@@ -1,0 +1,152 @@
+/* Global styles */
+
+body {
+  font-family: "museo-sans-rounded";
+  font-size: 14px;
+  line-height: 18px;
+  color: #e1e1e1;
+  font-weight: 100;
+  letter-spacing: 0.3px;
+}
+
+p {
+  margin: 0;
+}
+
+.line-big {
+  line-height: 26px;
+}
+
+.wrapper {
+  max-width: 686px;
+  width: 100%;
+  margin: 110px auto;
+  background-color: #152335;
+  border-radius: 6px;
+  padding: 24px 20px;
+}
+
+/* header */
+.header__logo__wrapper {
+  max-width: 64px;
+  max-height: 33px;
+}
+
+.header__logo__img {
+  width: 100%;
+}
+/* end of header block */
+
+/* container */
+.c-container {
+  padding: 0 15px;
+}
+
+/* container product */
+/* product image */
+.image__wrapper {
+  max-width: 329px;
+  max-height: 159px;
+  margin: 70px 0 74px 0;
+}
+
+.product__image__img {
+  width: 100%;
+}
+/* end of product image block */
+
+/* product slider-btn */
+.slider-btn__wrapper {
+  margin-left: 26px;
+}
+
+.product__slider-btn__input {
+  height: 9px;
+  width: 9px;
+  margin: 0 5px;
+  transition: 0.2s all linear;
+}
+
+.product__slider-btn__input--blue {
+  color: #293550;
+}
+
+.product__slider-btn__input--white {
+  color: #FFFFFF;
+}
+
+.product__slider-btn__input--red {
+  color: #F34B41;
+}
+
+.product__slider-btn__input--teal {
+  background-color: #24E7EE;
+}
+
+.product__slider-btn__input:checked {
+  transform: scale(1.4);
+  border: 2px solid grey;
+}
+/* end of product slider-btn */
+/* end of container product */
+
+/* container discription */
+.discription__wrapper {
+  padding-top: 18px;
+  padding-left: 80px;
+}
+
+/* discription model */
+.discription__model {
+  line-height: 26px;
+}
+
+.discription__model__name {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+/* end of discription model block */
+
+/* discription star */
+.star__wrapper {
+  margin: 15px 0 25px 0;
+  font-size: 4px;
+}
+
+.star__svg {
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+}
+/* end of discription star block */
+
+/* discription size qty */
+.size-qty__wrapper {
+  margin-left: 1px;
+}
+
+.size-qty__size,
+.size-qty__qty {
+  border: 1px solid silver;
+  padding: 6px 9px 6px 10px;
+  margin-left: 2px;
+  cursor: pointer;
+}
+
+.size-qty__svg {
+  margin-left: 5px;
+}
+/* end of discription size qty block */
+
+/* discription cart */
+.cart__wrapper {
+  margin: 40px 0px 0px 2px;
+}
+
+.cart__span {
+  border: 1px solid silver;
+  padding: 11px 58px 10px 53px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+/* end of discription cart block */

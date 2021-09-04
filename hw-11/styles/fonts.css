@@ -16,12 +16,19 @@
   font-family: "raleway-bold";
   src: url(/fonts/raleway/Raleway-Bold.ttf) format("truetype");
   font-weight: 700;
-  font-style: normal;
+  font-style: bold;
 }
 
 @font-face {
   font-family: "raleway-extra-bold";
   src: url(/fonts/raleway/Raleway-ExtraBold.ttf) format("truetype");
   font-weight: 800;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "museo-sans-rounded";
+  src: url(/fonts/museo-sans-rounded/MuseoSansRounded100.otf) format("opentype");
+  font-weight: 100;
   font-style: normal;
 }
