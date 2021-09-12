@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="c-header">
+      <div class="c-header__wrapper">
+        <div class="c-header__text">
+          <span
+            >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
+            corporis vel id facere explicabo? Autem consequatur, quae reiciendis
+            sint temporibus dicta maxime dignissimos provident cum. Enim
+            corporis optio tenetur deserunt nemo minima pariatur placeat nobis
+            ullam porro sapiente, illo tempore et. Dolore excepturi laudantium
+            dolorem saepe eligendi cupiditate qui aperiam.</span
+          >
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

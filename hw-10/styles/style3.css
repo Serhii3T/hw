@@ -1,0 +1,160 @@
+/* Global style */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Main style */
+body {
+  background-color: black;
+}
+
+/* Flower */
+.c-flower {
+  position: fixed;
+  right: 100px;
+  top: 100px;
+}
+
+.c-flower__wrapper {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 600px;
+  padding: 40px;
+  display: flex;
+  width: 600px;
+}
+
+
+.c-flower__lines__item {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  z-index: 3;
+}
+
+.c-flower__lines__item--vertical-mini {
+  transform: rotate(45deg);
+}
+
+.c-flower__lines__item--vertical {
+  transform: rotate(90deg);
+}
+
+.c-flower__lines__item--vertical-big {
+  transform: rotate(135deg);
+}
+
+.c-flower__yellow-circle {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  z-index: 5;
+}
+
+.c-flower__yellow-circle:hover {
+  transform: scale(0.7);
+  transition: .35s cubic-bezier(.4,0,.2,1);
+}
+
+.c-flower__circle-item {
+  transition: .35s cubic-bezier(.4,0,.2,1);
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  z-index: 4;
+}
+
+.c-flower__circle-item--top {
+  top: 0;
+}
+
+.c-flower__circle-item--top:hover {
+  transform: scale(1.3) translateY(-30px);
+}
+
+.c-flower__circle-item--top-right {
+  top: 55px;
+  right: 55px;
+}
+
+.c-flower__circle-item--top-right:hover {
+  transform: scale(1.3) translate(30px, -30px);
+}
+
+.c-flower__circle-item--right {
+  right: 0;
+}
+
+.c-flower__circle-item--right:hover {
+  transform: scale(1.3) translateX(30px);
+}
+
+.c-flower__circle-item--right-bottom {
+  right: 55px;
+  bottom: 55px;
+}
+
+.c-flower__circle-item--right-bottom:hover {
+  transform: scale(1.3) translate(30px, 30px);
+}
+
+.c-flower__circle-item--bottom {
+  bottom: 0;
+}
+
+.c-flower__circle-item--bottom:hover {
+  transform: scale(1.3) translateY(30px);
+}
+
+.c-flower__circle-item--left-bottom {
+  left: 55px;
+  bottom: 55px;
+}
+
+.c-flower__circle-item--left-bottom:hover {
+  transform: scale(1.3) translate(-30px, 30px);
+}
+
+.c-flower__circle-item--left {
+  left: 0;
+}
+ 
+.c-flower__circle-item--left:hover {
+  transform: scale(1.3) translateX(-30px);
+}
+
+.c-flower__circle-item--top-left {
+  top: 55px;
+  left: 55px;
+}
+
+.c-flower__circle-item--top-left:hover {
+  transform: scale(1.3) translate(-30px, -30px);
+}
+
+/* Line */
+.e-line {
+  background-color: silver;
+  height: 100%;
+  width: 100%;
+}
+
+/* Circle style */
+.circle {
+  background-color: silver;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.circle--yellow {
+  background-color: yellow;
+}
+
+.circle--red {
+  background-color: darkred;
+  z-index: 55;
+}

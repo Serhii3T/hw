@@ -1,0 +1,6 @@
+@font-face {
+  font-family: "raleway-bold";
+  src: url(/fonts/raleway/Raleway-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: bold;
+}

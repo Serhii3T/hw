@@ -1,0 +1,15 @@
+body {
+  background-color: #11364E;
+  color: white;
+}
+
+.c-contact-us__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}

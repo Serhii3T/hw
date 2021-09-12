@@ -34,12 +34,12 @@
 
 /* header */
 
-.header-cahee__wrapper {
+.cahee-header__wrapper {
   min-height: 1000px;
 }
 
 /* header-top */
-.header-cahee__top {
+.cahee-header__top {
   padding: 63px 0;
 }
 
@@ -55,7 +55,7 @@
 /* end of logo block */
 
 /* navigation */
-.header-cahee__navigation__link {
+.cahee-header__navigation__link {
   text-decoration: none;
   color: black;
   font-size: 16px;
@@ -63,7 +63,7 @@
   cursor: pointer;
 }
 
-.header-cahee__navigation__link:last-child {
+.cahee-header__navigation__link:last-child {
   margin-right: 0;
 }
 /* end of navigation block */
@@ -71,22 +71,22 @@
 /* end of header-top block */
 
 /* header bottom */
-.header-cahee__bottom__wrapper {
+.cahee-header__bottom__wrapper {
   padding-top: 208px;
 }
 
-.header-cahee__bottom__title {
+.cahee-header__bottom__title {
   font-family: "raleway-extra-bold", sans-serif;
   font-size: 60px;
   margin-bottom: 36px;
 }
 
-.header-cahee__bottom__text {
+.cahee-header__bottom__text {
   font-size: 17px;
   margin-bottom: 40px;
 }
 
-.header-cahee__bottom__link{
+.cahee-header__bottom__link{
   background-color: #FF6033;
   color: white;
   font-size: 20px;
@@ -116,31 +116,31 @@
 /* main */
 
 /* picture */
-.main-cahee__picture {
+.cahee-main__picture {
   max-width: 585px;
   padding: 35px 0;
 }
 
-.main-cahee__picture__img {
+.cahee-main__picture__img {
   left: -50px;
 }
 /* end of picture block */
 
 /* about */
-.main-cahee {
+.cahee-main {
   background-color: #00B1B1;
 }
 
-.main-cahee__about {
+.cahee-main__about {
   padding: 202px 10px 220px 85px;
 }
 
-.main-cahee__about__main-title {
+.cahee-main__about__main-title {
   font-size: 90px;
   margin-bottom: 46px;
 }
 
-.main-cahee__about__text {
+.cahee-main__about__text {
   margin-bottom: 8px;
   font-size: 17px;
 }
