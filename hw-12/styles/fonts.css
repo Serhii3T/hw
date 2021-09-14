@@ -1,15 +1,42 @@
-body {
-  background-color: #11364E;
-  color: white;
+@font-face {
+  font-family: 'Avenir Next Medium';
+  src: url('AvenirNextCyr-Medium.eot');
+  src: local('Avenir Next Cyr Medium'), local('AvenirNextCyr-Medium'),
+      url('../fonts/avenir-next/AvenirNextCyr-MediumItalic.eot') format('embedded-opentype'),
+      url('../fonts/avenir-next/AvenirNextCyr-MediumItalic.woff2') format('woff2'),
+      url('../fonts/avenir-next/AvenirNextCyr-MediumItalic.woff') format('woff'),
+      url('../fonts/avenir-next/AvenirNextCyr-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
 }
 
-.c-contact-us__wrapper {
-  display: flex;
-  justify-content: center;
+@font-face {
+  font-family: 'Avenir Next Demi Bold';
+  src: url('AvenirNextCyr-Demi.eot');
+  src: local('Avenir Next Cyr Demi'), local('AvenirNextCyr-Demi'),
+      url('../fonts/avenir-next/AvenirNextCyr-Demi.eot') format('embedded-opentype'),
+      url('../fonts/avenir-next/AvenirNextCyr-Demi.woff2') format('woff2'),
+      url('../fonts/avenir-next/AvenirNextCyr-Demi.woff') format('woff'),
+      url('../fonts/avenir-next/AvenirNextCyr-Demi.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
 
-.form__wrapper {
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
+@font-face {
+  font-family: 'Avenir Next Regular';
+  src: url('AvenirNextCyr-Regular.eot');
+  src: local('Avenir Next Cyr Regular'), local('AvenirNextCyr-Regular'),
+      url('../fonts/avenir-next/AvenirNextCyr-Regular.eot') format('embedded-opentype'),
+      url('../fonts/avenir-next/AvenirNextCyr-Regular.woff2') format('woff2'),
+      url('../fonts/avenir-next/AvenirNextCyr-Regular.woff') format('woff'),
+      url('../fonts/avenir-next/AvenirNextCyr-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url("../fonts/quicksand/Quicksand-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
 }

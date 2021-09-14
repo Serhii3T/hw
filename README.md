@@ -1,6 +1,7 @@
 ## help for me
 
 ## MIME - типы шрифтов
+eot - format("embedded-opentype") - на старые IE
 ttf - format("truetype") 
 otf - format("opentype")
 woff - format("woff")  webopenfileformat

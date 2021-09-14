@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <!-- bootstrap CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"/>
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/5021c5c4c2.js"
+      crossorigin="anonymous"></script>
+    <!-- fonts -->
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles/style2.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <title>HOMEWORK12-2</title>
+  </head>
+  <body>
+    <header class="c-header">
+      <!-- header wrapper -->
+      <div class="header__wrapper p-1 w-100">
+        <div class="btn-home p-1">
+          <a class="btn-home__page d-inline-block" href="./index-hw12-2.html">2nd task</a>
+          <a class="btn-home__page d-inline-block" href="../index.html">Home</a>
+        </div>
+      </div>
+      <!-- /.header__wrapper -->      
+    </header>
+    <div class="c-sign-in__container w-100 vh-100 d-flex text-white">
+      <div class="c-sign-in__container__wrapper w-100">
+        <div class="c-sign-in__form-swapper d-flex">
+          <div class="c-sign-in__form-swapper__wrapper">
+            <div class="c-sign-in__form-swapper__title d-flex w-100">
+              <a class="e-sign-in__switch-title--form-indicator" href="#">Sign in</a>
+              <a class="e-sign-in__switch-title--form-indicator" href="#">Join us</a>
+            </div>
+            <form
+              class="c-sign-in__form-swapper__form-block d-flex flex-column"
+              action="#"
+              method="post">
+              <label class="c-sign-in__form-item flex-column d-flex">
+                <span class="c-sign-in__item-name">Username</span>
+                <input
+                  class="e-sign-in__input e-sign-in__input--transparent-white-border"
+                  type="text"
+                  name="Username"
+                  placeholder=" "
+                  required="required" />
+                </label>
+                <label class="c-sign-in__form-item flex-column d-flex">
+                <span class="c-sign-in__item-name">Password</span>
+                <input
+                  class="e-sign-in__input e-sign-in__input--transparent-white-border"
+                  type="password"
+                  name="Password"
+                  placeholder=" "
+                  required="required"
+                  pattern="(?=.*d)(?=.*[a-z])(?=.*[A-Z]).{6,}" />
+                </label>
+                <label class="c-sign-in__form-item flex-column d-flex c-sign-in__form-item--flex-reversed justify-content-end flex-row-reverse">
+                  <span class="c-sign-in__item-name">Keep me signed in</span>
+                  <input class="e-sign-in__input-checkbox--big-green" type="checkbox" name="Consent"/>
+                </label>
+              <div class="c-sign-in__form-submit">
+                <button class="e-sign-in__button-submit e-sign-in__button-submit--teal" type="submit">
+                  <span class="e-sign-in__button-text">Sign In</span>
+                </button>
+              </div>
+              <div class="c-sign-in__form-help d-flex flex-row">
+                <div class="c-sign-in__form-help__items">
+                  <a class="e-sign-in__help-links" href="#">Forgot password</a>
+                </div>
+                <div class="c-sign-in__form-help__items">
+                  <a class="e-sign-in__help-links" href="#">Create an account</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="c-footer">
+      <!-- footer wrapper -->
+      <div class="footer__wrapper p-1 w-100">
+        <div class="btn-home p-1">
+          <a class="btn-home__page d-inline-block" href="./index-hw12-2.html">2nd task</a>
+          <a class="btn-home__page d-inline-block" href="../index.html">Home</a>
+        </div>
+      </div>
+      <!-- /.footer__wrapper --> 
+    </footer>
+  </body>
+</html>

@@ -55,11 +55,20 @@ p {
 .nav_icon {
   max-width: 100px;
 }
+
 /* end of nav block */
 
 /* services */
 .services__wrapper {
-  padding: 100px 10px 70px 110px;
+  padding: 100px 10px 70px 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-image: url('../images/img1.png');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .services__title__main {

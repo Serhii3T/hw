@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* btn home */
+.btn-home {
+  padding: 5px;
+}
+
+.btn-home__page {
+  background-color: black;
+  text-decoration: none;
+  border-radius: 10%;
+  cursor: pointer;
+  color: gold;
+  padding: 5px;
+}
+/* end of btn home block */
+
+.header__wrapper,
+.footer__wrapper {
+  background-color: blue;
+}
+
+.c-sign-in__container {
+  background-color: #e5eeee;
+  font-family: "Quicksand";
+}
+
+.c-sign-in__container__wrapper {
+  max-width: 400px;
+  margin: 50px auto;
+  max-height: 500px;
+  box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.8);
+}
+
+.c-sign-in__form-swapper {
+  background-image: url("../images/pic.png");
+  width: 400px;
+  height: 500px;
+}
+
+.c-sign-in__form-swapper__wrapper {
+  margin: 50px auto;
+  width: 262px;
+  height: 400px;
+}
+
+.c-sign-in__form-swapper__title {
+  gap: 25px;
+  font-size: 18px;
+  height: fit-content;
+  color: #f9faff;
+}
+
+.c-sign-in__form-swapper__form-block {
+  margin-top: 45px;
+  width: 262px;
+}
+
+.c-sign-in__form-item {
+  margin-top: 16.4px;
+}
+
+.c-sign-in__form-item:nth-child(1) {
+  margin-top: 0px;
+}
+
+.c-sign-in__form-item--flex-reversed {
+  font-size: 13px;
+  gap: 5.5px;
+  width: fit-content;
+}
+
+.c-sign-in__item-name {
+  padding-left: 2.5px;
+}
+
+.c-sign-in__form-submit {
+  margin-top: 43px;
+  height: 53px;
+  width: 262px;
+}
+
+.c-sign-in__form-help {
+  width: 263px;
+  margin-top: 17px;
+  gap: 35px;
+  font-size: 13px;
+}
+
+.c-sign-in__form-help__items {
+  border-bottom: 1px #d0d1dc solid;
+  width: fit-content;
+}
+
+.e-sign-in {
+  background-color: #f9faff;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  padding: 20px;
+  outline: none;
+  border: none;
+}
+
+.e-sign-in__button-submit {
+  cursor: pointer;
+  height: 42px;
+  width: 263px;
+}
+
+.e-sign-in__button-submit--teal {
+  background-color: #23ae92;
+  color: #f9faff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+}
+
+.e-sign-in__button-submit--teal > .e-button__text {
+  color: #f9faff;
+}
+
+.e-sign-in__button-submit--teal:active {
+  background-color: #e66a64;
+}
+
+a {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.e-sign-in {
+  width: fit-content;
+}
+
+.e-sign-in__switch-title--form-indicator {
+  border-bottom: 1px solid transparent;
+  padding-left: 2.5px;
+  line-height: 1.5;
+  opacity: 0.5;
+}
+
+.e-sign-in__switch-title--form-indicator:hover,
+.e-sign-in__switch-title--form-indicator:active {
+  border-bottom: 1px solid #e66a64;
+  opacity: 1;
+}
+
+.e-sign-in__help-links {
+  width: fit-content;
+  opacity: 0.5;
+}
+
+.e-sign-in__help-links:hover {
+  opacity: 1;
+}
+
+.e-sign-in {
+  width: 261px;
+  height: 42px;
+}
+
+.e-sign-in__input {
+  width: 261px;
+  height: 42px;
+}
+
+.e-sign-in__input:invalid:not(:focus):not(:placeholder-shown) {
+  background: pink;
+}
+
+.e-sign-in__input:invalid:not(:focus):not(:placeholder-shown) + label {
+  opacity: 0;
+}
+
+.e-sign-in__input--transparent-white-border {
+  background-color: transparent;
+  border: 2px solid #d0d1dc;
+  padding-left: 5px;
+  color: #f9faff;
+  margin-top: 7px;
+  outline: none;
+  opacity: 0.5;
+}
+
+.e-sign-in__input__input-checkbox {
+  height: 16px;
+  width: 16px;
+}
