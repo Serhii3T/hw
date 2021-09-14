@@ -73,10 +73,49 @@
               <div class="product__slider-btn">
                 <!-- slider btn wrapper -->
                 <div class="slider-btn__wrapper d-flex justify-content-center">
-                  <input class="product__slider-btn__input product__slider-btn__input--blue" type="radio" name="choise" />
-                  <input class="product__slider-btn__input product__slider-btn__input--white" type="radio" name="choise"/>
-                  <input class="product__slider-btn__input product__slider-btn__input--red" type="radio" name="choise" />
-                  <input class="product__slider-btn__input product__slider-btn__input--teal" type="radio" name="choise" />
+                  <input
+                    hidden
+                    class="
+                      product__slider-btn__input
+                      product__slider-btn__input--blue
+                    "
+                    type="radio"
+                    name="choise"
+                    id="choise1"
+                  />
+                  <label class="label-radio-btn blue" for="choise1"></label>
+                  <input
+                    hidden
+                    class="
+                      product__slider-btn__input
+                      product__slider-btn__input--white
+                    "
+                    type="radio"
+                    name="choise"
+                    id="choise2"
+                  />
+                  <label class="label-radio-btn white" for="choise2"></label>
+                  <input
+                    hidden
+                    class="
+                      product__slider-btn__input product__slider-btn__input--red
+                    "
+                    type="radio"
+                    name="choise"
+                    id="choise3"
+                  />
+                  <label class="label-radio-btn red" for="choise3"></label>
+                  <input
+                    hidden
+                    class="
+                      product__slider-btn__input
+                      product__slider-btn__input--teal
+                    "
+                    type="radio"
+                    name="choise"
+                    id="choise4"
+                  />
+                  <label class="label-radio-btn teal" for="choise4"></label>
                 </div>
                 <!-- /.slider-btn__wrapper -->
               </div>
@@ -92,7 +131,8 @@
               <!-- discription model -->
               <div class="discription__model">
                 <p class="discription__model__name">
-                  Nike SB Stefan <br> Janoski Max
+                  Nike SB Stefan <br />
+                  Janoski Max
                 </p>
                 <!-- /.discription__model__name -->
                 <p class="discription__model__gender">
@@ -188,47 +228,31 @@
                 <!-- size qty wrapper -->
                 <div class="size-qty__wrapper d-flex">
                   <!-- size qty size -->
-                  <div class="size-qty__size">
-                    <span class="size-qty__span">Size</span>
-                    <svg class="size-qty__svg"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      width="13.5px"
-                      height="8.5px"
+                  <div class="block-select">
+                    <select
+                      name="size"
+                      id="size-select"
+                      style="-webkit-appearance: none"
                     >
-                      <path
-                        fill-rule="evenodd"
-                        stroke="rgb(76, 82, 90)"
-                        stroke-width="1px"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        fill="none"
-                        d="M12.157,1.500 L6.500,7.157 L0.843,1.500 "
-                      />
-                    </svg>
+                      <option value="">Size</option>
+                      <option value="L">L</option>
+                      <option value="M">M</option>
+                      <option value="M">S</option>
+                    </select>
                   </div>
-                  <!-- /.size-qty__size -->
-                  <!-- size qty qty -->
-                  <div class="size-qty__qty">
-                    <span class="size-qty__span">Qty</span>
-                    <svg class="size-qty__svg"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      width="13.5px"
-                      height="8.5px"
+
+                  <div class="block-select">
+                    <select
+                      name="qty"
+                      id="qnty-select"
+                      style="-webkit-appearance: none"
                     >
-                      <path
-                        fill-rule="evenodd"
-                        stroke="rgb(76, 82, 90)"
-                        stroke-width="1px"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        fill="none"
-                        d="M12.157,1.500 L6.500,7.157 L0.843,1.500 "
-                      />
-                    </svg>
+                      <option value="">Qty</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
                   </div>
-                  <!-- /.size-qty__qty -->
                 </div>
                 <!-- /.size-qty__wrapper -->
               </div>
@@ -236,9 +260,7 @@
               <!-- discription cart -->
               <div class="discription__cart">
                 <!-- cart wrapper -->
-                <div class="cart__wrapper">
-                  <span class="cart__span">Add to cart</span>
-                </div>
+                <button class="cart__wrapper">Add to cart</button>
                 <!-- /.cart__wrapper -->
               </div>
               <!-- /.discription__cart -->

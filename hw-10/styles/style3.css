@@ -5,6 +5,17 @@
   margin: 0;
 }
 
+@keyframes rotation {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
 /* Main style */
 body {
   background-color: black;
@@ -17,17 +28,7 @@ body {
   top: 100px;
 }
 
-.c-flower__wrapper {
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  height: 600px;
-  padding: 40px;
-  display: flex;
-  width: 600px;
-}
-
-
+/* line */
 .c-flower__lines__item {
   position: absolute;
   width: 100%;
@@ -47,16 +48,21 @@ body {
   transform: rotate(135deg);
 }
 
-.c-flower__yellow-circle {
-  position: absolute;
-  height: 200px;
-  width: 200px;
-  z-index: 5;
+.e-line {
+  background-color: silver;
+  height: 100%;
+  width: 100%;
 }
+/* end of line block */
 
-.c-flower__yellow-circle:hover {
-  transform: scale(0.7);
-  transition: .35s cubic-bezier(.4,0,.2,1);
+.c-flower__wrap {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: flex;
+  padding: 40px;
+  height: 600px;
+  width: 600px;
 }
 
 .c-flower__circle-item {
@@ -67,6 +73,7 @@ body {
   z-index: 4;
 }
 
+/* small circle */
 .c-flower__circle-item--top {
   top: 0;
 }
@@ -76,8 +83,8 @@ body {
 }
 
 .c-flower__circle-item--top-right {
-  top: 55px;
   right: 55px;
+  top: 55px;
 }
 
 .c-flower__circle-item--top-right:hover {
@@ -93,8 +100,8 @@ body {
 }
 
 .c-flower__circle-item--right-bottom {
-  right: 55px;
   bottom: 55px;
+  right: 55px;
 }
 
 .c-flower__circle-item--right-bottom:hover {
@@ -110,8 +117,8 @@ body {
 }
 
 .c-flower__circle-item--left-bottom {
-  left: 55px;
   bottom: 55px;
+  left: 55px;
 }
 
 .c-flower__circle-item--left-bottom:hover {
@@ -127,34 +134,50 @@ body {
 }
 
 .c-flower__circle-item--top-left {
-  top: 55px;
   left: 55px;
+  top: 55px;
 }
 
 .c-flower__circle-item--top-left:hover {
   transform: scale(1.3) translate(-30px, -30px);
 }
 
-/* Line */
-.e-line {
-  background-color: silver;
-  height: 100%;
-  width: 100%;
-}
 
 /* Circle style */
 .circle {
   background-color: silver;
   border-radius: 50%;
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
 .circle--yellow {
   background-color: yellow;
+  left: calc(50% - 75px);
+  top: calc(50% - 75px);
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  z-index: 10;
 }
 
 .circle--red {
   background-color: darkred;
   z-index: 55;
+}
+
+/* yellow circle hover  */
+.circle--yellow:hover {
+  transition: 0.4s ease-in-out;
+  transform: scale(0.8);
+  cursor: pointer;
+}
+
+.circle--yellow:hover ~ .c-flower__wrap  {
+  animation: rotation infinite;
+  animation-duration: 1s;
+}
+
+.circle--yellow:hover ~ .c-flower__wrap .c-flower__circle-item  {
+  transform: scale(1.5);
 }
