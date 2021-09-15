@@ -24,38 +24,38 @@
   background-color: blue;
 }
 
-.c-sign-in__container {
+.c-sign-in {
   background-color: #e5eeee;
   font-family: "Quicksand";
 }
 
-.c-sign-in__container__wrapper {
+.c-sign-in__wrapper {
   max-width: 400px;
   margin: 50px auto;
   max-height: 500px;
   box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.8);
 }
 
-.c-sign-in__form-swapper {
+.c-sign-in__form-dispatch {
   background-image: url("../images/pic.png");
   width: 400px;
   height: 500px;
 }
 
-.c-sign-in__form-swapper__wrapper {
+.c-sign-in__form-dispatch__wrapper {
   margin: 50px auto;
   width: 262px;
   height: 400px;
 }
 
-.c-sign-in__form-swapper__title {
+.c-sign-in__form-dispatch__title {
   gap: 25px;
   font-size: 18px;
   height: fit-content;
   color: #f9faff;
 }
 
-.c-sign-in__form-swapper__form-block {
+.c-sign-in__form-dispatch__form-block {
   margin-top: 45px;
   width: 262px;
 }
