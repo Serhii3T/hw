@@ -32,7 +32,7 @@ p {
 /* navigation */
 .nav__wrapper {
   margin-top: 177px;
-  margin-left: 89px;
+  margin-left: 150px;
 }
 
 .nav__item {
@@ -60,20 +60,16 @@ p {
 
 /* services */
 .services__wrapper {
-  padding: 100px 10px 70px 70px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+  padding: 100px 30px 30px 60px;
   background-image: url('../images/img1.png');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-x: 140px;
+  background-position-y: 100px;
 }
 
 .services__title__main {
   font-size: 90px;
   top: 310px;
-  left: 31px;
+  left: 60px;
 }
 /* end of services block */
