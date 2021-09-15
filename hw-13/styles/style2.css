@@ -1,0 +1,376 @@
+/* global style */
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.lato-b {
+  font-family: "lato-bold", sans-serif;
+}
+
+.lato-l {
+  font-family: "lato-light", sans-serif;
+}
+
+.lato-r {
+  font-family: "lato-regular", sans-serif;
+}
+
+body {
+  max-width: 1920px;
+}
+
+.container {
+  width: 900px;
+}
+/* end of global style */
+
+/* header */
+/* btn home */
+.btn-home {
+  padding: 5px;
+}
+
+.btn-home__page {
+  background-color: black;
+  text-decoration: none;
+  border-radius: 10%;
+  cursor: pointer;
+  color: gold;
+  padding: 5px;
+}
+/* end of btn home block */
+
+/* header banner */
+/* logo */
+.logo__wrapper {
+  margin-bottom: 83px;
+  padding-top: 135px;
+}
+
+.logo__svg {
+  height: 70px;
+  width: 70px;
+}
+/* end of logo block */
+
+.header__banner {
+  background-image: url('../images/banner.png');
+  background-repeat: no-repeat;
+  min-height: 1070px;
+}
+
+.header__banner__wrapper {
+  padding: 150px;
+}
+.header__banner__title {
+  letter-spacing: 10px;
+  margin-bottom: 34px;
+  font-size: 52px;
+}
+
+.header__banner__subtitle {
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  line-height: 29px;
+  font-size: 15px;
+}
+/* end of header banner block */
+
+/* main */
+/* section about us */
+.main__about-us {
+  padding: 160px 0;
+}
+
+.main__about-us__wrapper {
+  padding: 70px 170px 25px 175px;
+  border: 2px solid black;
+  border-top: transparent;
+}
+
+.main__about-us__wrapper::before {
+  background-color: black;
+  position: absolute;
+  width: 240px;
+  content: "";
+  height: 2px;
+  left: 0;
+  top: 0;
+}
+
+.main__about-us__wrapper::after {
+  background-color: black;
+  position: absolute;
+  width: 240px;
+  content: "";
+  height: 2px;
+  right: 0;
+  top: 0;
+}
+
+.main__about-us__topic {
+  letter-spacing: 6px;
+  font-size: 34px;
+  left: 342px;
+  top: -20px;
+}
+
+.main__about-us__topic-text,
+.main__services__topic-text {
+  line-height: 24px;
+  font-size: 16px;
+}
+/* end of section about us block */
+
+/* section services */
+.main__services {
+  background-image: url('../images/services.png');
+  background-repeat: no-repeat;
+  padding: 130px 0 110px 0;
+  min-height: 490px;
+}
+
+.main__services__wrapper {
+  padding: 68px 170px 60px 170px;
+  border: 2px solid white;
+  border-top: transparent;
+}
+
+.main__services__wrapper::before {
+  background-color: white;
+  position: absolute;
+  width: 235px;
+  content: "";
+  height: 2px;
+  left: 0;
+  top: 0;
+}
+
+.main__services__wrapper::after {
+  background-color: white;
+  position: absolute;
+  width: 245px;
+  content: "";
+  height: 2px;
+  right: 0;
+  top: 0;
+}
+
+.main__services__topic {
+  letter-spacing: 6px;
+  line-height: 24px;
+  font-size: 34px;
+  left: 345px;
+  top: -15px;
+}
+/* end of section services block */
+
+/* section what we do */
+.main__what-we-do {
+  padding: 120px 0;
+}
+
+.main__what-we-do__wrapper {
+  padding: 121px 170px 90px 163px;
+  border: 2px solid black;
+  border-top: transparent;
+}
+
+.main__what-we-do__wrapper::before {
+  background-color: black;
+  position: absolute;
+  width: 235px;
+  content: "";
+  height: 2px;
+  left: 0;
+  top: 0;
+}
+
+.main__what-we-do__wrapper::after {
+  background-color: black;
+  position: absolute;
+  width: 240px;
+  content: "";
+  height: 2px;
+  right: 0;
+  top: 0;
+}
+
+.main__what-we-do__topic {
+  letter-spacing: 6px;
+  font-size: 34px;
+  left: 305px;
+  top: -23px;
+}
+
+.main__what-we-do__svg {
+  margin-bottom: 35px;
+}
+
+.main__what-we-do__topic-sup {
+  margin-bottom: 25px;
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+
+.main__what-we-do__topic-text {
+  margin-bottom: 100px;
+  line-height: 26px;
+  font-size: 14px;
+}
+
+.main__what-we-do__topic-text:last-child {
+  margin-bottom: 0;
+}
+/* end of section want we do block */
+
+/* section our works */
+.col,
+.row {
+ padding: 0;
+ margin: 0;
+}
+
+.main__our-works__topworkz {
+  background-image: url(../images/nav-work1.png);
+  background-repeat: no-repeat;
+  padding: 40px;
+}
+
+.main__our-works__joint {
+  background-image: url(../images/nav-work2.png);
+  background-repeat: no-repeat;
+  padding: 40px;
+}
+
+.main__our-works__market {
+  background-image: url(../images/nav-work3.png);
+  background-repeat: no-repeat;
+  padding: 40px;
+}
+
+.main__our-works__worktop {
+  background-image: url(../images/nav-work4.png);
+  background-repeat: no-repeat;
+  padding: 40px;
+}
+
+.main__our-works__lable {
+  background-image: url(../images/nav-work5.png);
+  background-repeat: no-repeat;
+  padding: 40px;
+}
+
+.main__our-works__kyiv {
+  background-image: url(../images/nav-work6.png);
+  background-repeat: no-repeat;
+  padding: 40px;
+}
+
+.pic-h-w {
+  min-height: 240px;
+  width: 541px;
+}
+
+.pic-h-w-center {
+  min-height: 240px;
+  margin: 0 10px;
+  width: 800px;
+}
+
+.our-works__text {
+  letter-spacing: 6px;
+  font-size: 34px;
+  bottom: 40px;
+}
+/* end of section our works block */
+
+/* footer */
+.footer__wrapper {
+  padding: 130px 0 60px 0;
+}
+
+/* footer top */
+.footer__top {
+  padding: 69px 162px 50px 160px;
+  border: 2px solid black;
+  border-top: transparent;
+  letter-spacing: .2px;
+}
+
+.footer__top::before {
+  background-color: black;
+  position: absolute;
+  width: 235px;
+  content: "";
+  height: 2px;
+  left: 0;
+  top: 0;
+}
+
+.footer__top::after {
+  background-color: black;
+  position: absolute;
+  width: 240px;
+  content: "";
+  height: 2px;
+  right: 0;
+  top: 0;
+}
+
+.footer__sup-title {
+  letter-spacing: 5px;
+  font-size: 30px;
+  left: 333px;
+  top: -12px;
+}
+
+.footer__sub-text {
+  padding-bottom: 37px;
+  line-height: 26px;
+  font-size: 16px;
+}
+
+.footer__btn {
+  background-color: #393939;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 60px;
+  width: 400px;
+}
+/* footer top */
+
+/* footer bottom */
+.footer__bottom {
+  margin-top: 63px;
+}
+
+.footer__logo__svg {
+  height: 35px;
+  width: 35px;
+}
+
+.footer__bottom__text {
+  margin-left: 13px;
+  font-size: 14px;
+}
+/* end of footer bottom block */
+/* end of footer block */

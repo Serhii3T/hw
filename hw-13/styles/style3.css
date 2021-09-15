@@ -1,0 +1,26 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* btn home */
+.btn-home {
+  padding: 5px;
+}
+
+.btn-home__page {
+  background-color: black;
+  text-decoration: none;
+  border-radius: 10%;
+  cursor: pointer;
+  color: gold;
+  padding: 5px;
+}
+/* end of btn home block */
+
+.svg__img {
+  width: 100px;
+  height: 100px;
+}
