@@ -76,6 +76,7 @@
 
 .c-sign-in__item-name {
   padding-left: 2.5px;
+  cursor: pointer;
 }
 
 .c-sign-in__form-submit {
