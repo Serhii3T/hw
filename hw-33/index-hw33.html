@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- style -->
+    <link rel="stylesheet" href="./index-hw33.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <title>jQuery tabs</title>
+  </head>
+  <body>
+    <!-- symbol defs -->
+    <svg
+      aria-hidden="true"
+      style="position: absolute; width: 0; height: 0; overflow: hidden"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <defs>
+        <symbol id="icon-star" viewBox="0 0 34 32">
+          <path
+            d="M8.702 31.481l8.324-3.946 8.501 3.99c-1.072-0.503 2.765 2.191 2.41-1.547-0.339-3.595-0.883-9.368-0.883-9.368l6.158-6.857c-0.989 1.1 2.719-1.905-0.733-2.556-3.49-0.657-9.746-1.119-9.746-1.119s-2.488-5.747-4.324-8.925c0.855 1.479-0.969-3.268-2.802-0.069s-4.491 9.018-4.491 9.018-6.066 0.473-9.559 1.142c1.368-0.261-3.196-0.141-0.883 2.428l6.303 6.979s-0.53 5.798-0.854 9.391c0.088-0.925-1.192 3.227 2.578 1.439z"
+          ></path>
+        </symbol>
+        <symbol id="icon-basket" viewBox="0 0 32 32">
+          <path
+            d="M31.914 12.425l0.038 0.010-4 18-0.038-0.010c-0.189 0.902-0.976 1.57-1.919 1.574h-20.001c-0.944-0.005-1.731-0.673-1.918-1.562l-0.002-0.013-0.038 0.010-4-18 0.038-0.010c-0.038-0.125-0.065-0.269-0.073-0.419l-0-0.005c0-1.105 0.895-2 2-2v0h4c0-5.523 4.477-10 10-10s10 4.477 10 10v0h4c1.105 0 2 0.895 2 2v0c-0.014 0.156-0.044 0.3-0.090 0.437l0.004-0.013zM16 4.001c-3.314 0-6 2.686-6 6 0 0.001 0 0.001 0 0.002v-0h12c0-0 0-0.001 0-0.002 0-3.314-2.686-6-6-6v0zM24 18.002c-1.105-0.001-2-0.897-2-2.002v-2h-12v2c0 1.105-0.895 2-2 2s-2-0.895-2-2v0-2h-1.507l3.112 13.998h16.79l3.112-13.998h-1.507v2c-0.001 1.104-0.896 1.999-2 2h-0z"
+          ></path>
+        </symbol>
+        <symbol id="icon-card" viewBox="0 0 29 32">
+          <path
+            d="M28.934 17.232c0 0.022 0 0.049 0 0.075 0 4.011-3.229 7.268-7.23 7.314l-0.004 0c-2.364-0.011-4.454-1.176-5.736-2.961l-0.014-0.021-0.035 0.026-1.446-1.97-1.448 1.97-0.020-0.015c-1.307 1.799-3.4 2.959-5.764 2.971h-0.002c-4.004-0.046-7.232-3.303-7.232-7.314 0-0.026 0-0.053 0-0.079l-0 0.004c0.003-1.665 0.553-3.201 1.48-4.438l-0.014 0.019-0.020-0.015s10.609-12.809 13.019-12.809 13.018 12.809 13.018 12.809l-0.020 0.015c0.914 1.218 1.464 2.754 1.467 4.418v0.001zM12.058 27.083v-2.462c0-1.331 1.079-2.411 2.411-2.411s2.411 1.079 2.411 2.411v2.462c1.361 0 2.464 1.103 2.464 2.464s-1.103 2.464-2.464 2.464h-4.821c-1.361 0-2.464-1.103-2.464-2.464s1.103-2.464 2.464-2.464v0z"
+          ></path>
+        </symbol>
+        <symbol id="icon-tooltip" viewBox="0 0 32 32">
+          <path
+            d="M28.013 26.011h-5.177l-5.42 5.42c-0.362 0.362-0.863 0.586-1.416 0.586s-1.053-0.224-1.416-0.587l-5.42-5.42h-5.177c-2.212 0-4.004-1.793-4.004-4.004v0-18.019c0-2.212 1.793-4.004 4.004-4.004v0h24.026c2.212 0 4.004 1.793 4.004 4.004v0 18.019c0 2.212-1.793 4.004-4.004 4.004v0zM28.013 5.989c0-1.106-0.896-2.002-2.002-2.002v0h-20.021c-1.106 0-2.002 0.896-2.002 2.002v0 14.015c0 1.106 0.896 2.002 2.002 2.002v0h4.004c0 0 0 0 0 0 0.553 0 1.053 0.224 1.416 0.586l4.591 4.589 4.591-4.589c0.361-0.362 0.86-0.586 1.411-0.586 0.002 0 0.003 0 0.005 0h4.004c1.106 0 2.002-0.896 2.002-2.002v0-14.015zM22.006 18.002h-12.013c-1.106 0-2.002-0.896-2.002-2.002s0.896-2.002 2.002-2.002h12.013c1.106 0 2.002 0.896 2.002 2.002s-0.896 2.002-2.002 2.002v0zM22.006 11.996h-12.013c-1.106 0-2.002-0.896-2.002-2.002s0.896-2.002 2.002-2.002h12.013c1.106 0 2.002 0.896 2.002 2.002s-0.896 2.002-2.002 2.002v0z"
+          ></path>
+        </symbol>
+      </defs>
+    </svg>
+    <!-- /.symbol defs -->
+    <div class="wrap">
+      <article class="wrapper">
+        <!-- header -->
+        <header class="header">
+          <ul class="header__nav">
+            <li class="nav-item active" data-id="1">
+              <svg class="icon icon-nav icon-tooltip">
+                <use xlink:href="#icon-tooltip"></use>
+              </svg>
+              <span>INFORMATION</span>
+            </li>
+            <li class="nav-item" data-id="2">
+              <svg class="icon icon-nav icon-card">
+                <use xlink:href="#icon-card"></use>
+              </svg>
+              <span>RATINGS INFO</span>
+            </li>
+            <li class="nav-item" data-id="3">
+              <svg class="icon icon-nav icon-basket">
+                <use xlink:href="#icon-basket"></use>
+              </svg>
+              <span>WHERE TO BUY</span>
+            </li>
+          </ul>
+        </header>
+        <!-- /.header -->
+        <!-- content -->
+        <main class="content">
+          <div class="content__item data-id-1 active">
+            <!-- left -->
+            <div class="content__left">
+              <!-- img -->
+              <div class="content__img">
+                <img src="./images/farcry4.png" alt="game" />
+              </div>
+              <!-- /.content__img -->
+              <!-- stars -->
+              <div class="content__stars">
+                <svg class="icon icon-star">
+                  <use xlink:href="#icon-star"></use>
+                </svg>
+                <svg class="icon icon-star">
+                  <use xlink:href="#icon-star"></use>
+                </svg>
+                <svg class="icon icon-star">
+                  <use xlink:href="#icon-star"></use>
+                </svg>
+                <svg class="icon icon-star">
+                  <use xlink:href="#icon-star"></use>
+                </svg>
+                <svg class="icon icon-star icon-star-gray">
+                  <use xlink:href="#icon-star"></use>
+                </svg>
+              </div>
+              <!-- /.content__stars -->
+            </div>
+            <!-- /.content__left -->
+            <div class="content__right">
+
+              <!-- info -->
+              <div class="content__info">
+
+                <!-- title -->
+                <div class="content__title">
+                  <!-- name -->
+                  <h2 class="content__name">FarCry 4</h2>
+                  <!-- /.content__name -->
+                  <!-- data -->
+                  <p class="content__data-public">First Released Nov 17, 2014</p>
+                  <!-- /.content__data-public -->
+                </div>
+                <!-- /.content__title -->
+
+                <!-- rating -->
+                <div class="content_rating-wrap">
+                  <div class="content__rating">
+                    <!-- number rating -->
+                    <span class="content__num">7.8</span>
+                    <!-- /.content__num -->
+                  </div>
+                  <!-- /.content__rating -->
+                </div>
+                <!-- /.content_rating-wrap -->
+              </div>
+              <!-- /.content__info -->
+
+              <!-- text -->
+              <div class="content__text">
+                <p>
+                  In Far Cry 4, players find themselves in Kyrat, a breathtaking, perilous and wild region of the Hima
+                  layas struggling under the regime of a despotic self-appointed king.
+                </p>
+              </div>
+              <!-- /.content__text -->
+
+              <!-- price and button -->
+              <div class="content__purchase">
+                <!-- price -->
+                <div class="content__price">
+                  <p class="content__discount">20% OFF!</p>
+                  <p class="content__sum">&#36;59.96</p>
+                </div>
+                <!-- /.content__price -->
+
+                <!-- button -->
+                <div class="content__btn">
+                  <a class="content__link" href="#">BUY IT NOW</a>
+                </div>
+                <!-- /.content__btn -->
+              </div>
+              <!-- /.content__purchase -->
+
+            </div>
+            <!-- /.content__right -->
+          </div>
+          <div class="content__item data-id-2">
+            <h2>test2</h2>
+            orem Ipsum - это текст-"рыба", часто используемый в печати и
+            вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
+            латинице с начала XVI века. В то время некий безымянный печатник
+            создал большую коллекцию размеров и форм шрифтов, используя Lorem
+            Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил
+            без заметных изменений пять веков, но и перешагнул в электронный
+            дизайн. Его популяризации в новое время послужили публикация листов
+            Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее
+            время, программы электронной вёрстки типа Aldus PageMaker, в
+            шаблонах которых используется Lorem Ipsum.orem Ipsum - это
+            текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
+            является стандартной "рыбой" для текстов на латинице с начала XVI
+            века. В то время некий безымянный печатник создал большую коллекцию
+            размеров и форм шрифтов, используя Lorem Ipsum для распечатки
+            образцов. Lorem Ipsum не только успешно пережил без заметных
+            изменений пять веков, но и перешагнул в электронный дизайн. Его
+            популяризации в новое время послужили публикация листов Letraset с
+            образцами Lorem Ipsum в 60-х годах и, в более недавнее время,
+            программы электронной вёрстки типа Aldus PageMaker, в шаблонах
+            которых используется Lorem Ipsum.
+          </div>
+          <div class="content__item data-id-3">
+            <h2>test3</h2>
+            orem Ipsum - это текст-"рыба", часто используемый в печати и
+            вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
+            латинице с начала XVI века. В то время некий безымянный печатник
+            создал большую коллекцию размеров и форм шрифтов, используя Lorem
+            Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил
+            без заметных изменений пять веков, но и перешагнул в электронный
+            дизайн. Его популяризации в новое время послужили публикация листов
+            Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее
+            время, программы электронной вёрстки типа Aldus PageMaker, в
+            шаблонах которых используется Lorem Ipsum.
+          </div>
+        </main>
+        <!-- /.content -->
+      </article>
+      <!-- /.article -->
+    </div>
+    <!-- /.wrap -->
+    <!-- article -->
+
+    <!-- scripts -->
+    <script src="./index-hw33.js"></script>
+  </body>
+</html>

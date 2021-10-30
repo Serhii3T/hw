@@ -1,0 +1,39 @@
+p {
+  margin-top: 20px;
+}
+
+header {
+  justify-content: center;
+  display: flex;
+}
+
+a {
+  background-color: cadetblue;
+  border: 1px solid black;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 20px;
+  margin: 10px;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: brown;
+}
+
+.wrapper {
+  padding: 50px;
+}
+
+.container {
+  max-width: 1500px;
+}
+
+.task {
+  border: 1px solid black;
+}
+
+.js-btn {
+  margin: 10px;
+}

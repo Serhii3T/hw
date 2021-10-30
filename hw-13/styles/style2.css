@@ -37,7 +37,7 @@ body {
 }
 
 .container {
-  width: 900px;
+  max-width: 900px;
 }
 
 .bg-img {
@@ -71,19 +71,17 @@ body {
 }
 
 .logo__svg {
-  height: 70px;
-  width: 70px;
+  max-height: 70px;
+  max-width: 70px;
 }
 /* end of logo block */
 
 .header__banner {
   background-image: url('../images/banner.png');
   min-height: 1070px;
+  height: 100%;
 }
 
-.header__banner__wrapper {
-  padding: 150px;
-}
 .header__banner__title {
   letter-spacing: 10px;
   margin-bottom: 34px;
@@ -110,8 +108,6 @@ body {
 }
 
 .main__about-us__topic {
-  background-color: white;
-  display: inline-block;
   margin-bottom: 45px;
   letter-spacing: 6px;
   margin-top: -30px;
@@ -183,12 +179,10 @@ body {
 }
 
 .main__what-we-do__topic {
-  background-color: white;
-  display: inline-block;
   letter-spacing: 6px;
-  font-size: 34px;
-  margin-top: -25px;
   margin-bottom: 95px;
+  margin-top: -25px;
+  font-size: 34px;
   padding: 0 70px;
 }
 
@@ -261,19 +255,21 @@ body {
 @media screen and (max-width: 900px) {
   .pic-h-w {
     width: calc(50% - 10px);
+    width: 100%;
   }
 
   .pic-h-w-center {
     width: calc(50% - 10px);
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
   .pic-h-w,
   .pic-h-w-center {
     width: 100%;
   }
-}
+} */
 
 
 .our-works__text {
@@ -296,8 +292,6 @@ body {
 }
 
 .footer__sup-title {
-  background-color: white;
-  display: inline-block;
   letter-spacing: 5px;
   font-size: 30px;
   margin-top: -20px;
