@@ -14,7 +14,7 @@ let currentSlides = swiper.slides[swiper.realIndex + 3];
 currentSlides.classList.add('lasted');
 
 swiper.on('slideChange', function () {
-     let = currentSlide = swiper.slides[swiper.realIndex + 3]
+     let = currentSlides = swiper.slides[swiper.realIndex + 3]
      $('.swiper-slide').removeClass('lasted');
-     currentSlide.classList.add('lasted');
+     currentSlides.classList.add('lasted');
 });
