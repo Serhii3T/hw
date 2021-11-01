@@ -42,13 +42,3 @@ body {
   grid-row:    3 / 4;
   grid-column: 2 / 5;
 }
-
-table,td {
-  padding: 5px 10px;
-  margin: 10px;
-  text-align: center;
-}
-
-td {
-  width: 15px;
-}

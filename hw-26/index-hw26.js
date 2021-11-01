@@ -145,6 +145,26 @@ let myFync = {
       }
       document.write("</div>");
     }
+    
+    // 2nd variant
+    // let cd = '<table cellpadding="6" cellspacing="3" border="1">\n';
+    // cd += "<tr>\n";
+    // for (let i = 1; i <= 9; i++)
+    //   cd +=
+    //     '<td align="right"><font color="red">&nbsp;' +
+    //     (i == 1 ? "" : i) +
+    //     "</font></td>\n";
+    // for (i = 1; i <= 10; i++) {
+    //   cd += "<tr>\n";
+    //   for (let j = 1; j <= 9; j++)
+    //     cd +=
+    //       '<td align="right">' +
+    //       (j == 1 ? '<font color="red">&nbsp;' + i + "</font>" : i * j) +
+    //       "</td>\n";
+    //   cd += "</tr>\n";
+    // }
+    // cd += "</table>";
+    // with (document) open(), write(cd), close();
   },
   task10: function () {
     const n = 0;
