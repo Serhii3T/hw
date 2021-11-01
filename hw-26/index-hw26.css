@@ -1,0 +1,44 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 1500px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* header */
+.header {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.header__btn {
+  background-color: black;
+  display: inline-block;
+  text-decoration: none;
+  color: yellow;
+  padding: 20px;
+}
+
+/* content */
+.content__wrapper {
+  grid-template-columns: minmax(auto, 30%) 1fr 1fr 1fr;
+  grid-template-rows:    minmax(100px, auto);
+  grid-gap: 10px;
+  display: grid;
+}
+
+.content__item {
+  align-content: space-between;
+  border: 1px solid black;
+  padding: 10px;
+  display: grid;
+}
+
+.content__item--size {
+  grid-row:    3 / 4;
+  grid-column: 2 / 5;
+}

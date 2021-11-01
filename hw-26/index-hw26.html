@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- style -->
+    <link rel="stylesheet" href="./index-hw26.css" />
+    <!-- favicon -->
+    <title>Cycle</title>
+  </head>
+  <body>
+    <!-- wrapper -->
+    <div class="wrapper">
+      <!-- header -->
+      <header class="header">
+        <a class="header__btn" href="../index.html">HOME</a>
+      </header>
+      <!-- /.header -->
+      <!-- content -->
+      <div class="content">
+        <!-- content wrapper -->
+        <div class="content__wrapper">
+          <div class="content__item">
+            <p>
+              1. Подсчитать сумму всех чисел в заданном пользователем диапазоне.
+            </p>
+            <button class="content__btn" data-task-id="1">перейти</button>
+          </div>
+          <!-- /.content__item -->
+          <div class="content__item">
+            <p>2. Запросить 2 числа и найти только наибольший общий делитель.</p>
+            <button class="content__btn" data-task-id="2">перейти</button>
+          </div>
+          <!-- /.content__item -->
+          <div class="content__item">
+            <p>
+              3. Запросить у пользователя число и вывести все делители этого числа.
+            </p>
+            <form name="form">
+              <input type="text" size=28 name="num">
+              <input type="button" class="content__btn" data-task-id="3" name="btn" value="Найти"><br /><br />
+              <textarea name="out" rows="5" cols="40"></textarea>
+            </form>
+            <!-- <button class="content__btn" data-task-id="3">перейти</button> -->
+          </div>
+          <!-- /.content__item -->
+          <div class="content__item">
+            <p>4. Определить количество цифр в введенном числе.</p>
+            <button class="content__btn" data-task-id="4">перейти</button>
+          </div>
+          <!-- /.content__item -->
+          <div class="content__item">
+            <p>
+              5. Запросить у пользователя 10 чисел и подсчитать, сколько он ввел
+              положительных, отрицательных и нулей. При этом также посчитать,
+              сколько четных и нечетных. Вывести статистику на экран. Учтите,
+              что достаточно одной переменной (не 10) для ввода чисел
+              пользователем.
+            </p>
+            <button class="content__btn" data-task-id="5">перейти</button>
+          </div>
+          <!-- /.content__item -->
+          <div class="content__item">
+            <p>
+              6. Зациклить калькулятор. Запросить у пользователя 2 числа и знак,
+              решить пример, вывести результат и спросить, хочет ли он решить
+              еще один пример. И так до тех пор, пока пользователь не откажется.
+            </p>
+            <button class="content__btn" data-task-id="6">перейти</button>
+          </div>
+          <!-- /.content__item -->
+          <div class="content__item">
+            <p>
+              7. Запросить у пользователя число и на сколько цифр его сдвинуть.
+              Сдвинуть цифры числа и вывести результат (если число 123456
+              сдвинуть на 2 цифры, то получится 345612).
+            </p>
+            <button class="content__btn" data-task-id="7">перейти</button>
+          </div>
+          <!-- /.content__item -->
+          <div class="content__item">
+            <p>
+              8. Зациклить вывод дней недели таким образом: «День недели. Хотите
+              увидеть следующий день?» и так до тех пор, пока пользователь
+              нажимает OK.
+            </p>
+            <button class="content__btn" data-task-id="8">перейти</button>
+          </div>
+          <!-- /.content__item -->
+          <div class="content__item">
+            <p>
+              9. Вывести таблицу умножения для всех чисел от 2 до 9. Каждое число
+              необходимо умножить на числа от 1 до 10.
+            </p>
+            <button class="content__btn" data-task-id="9">перейти</button>
+          </div>
+          <!-- /.content__item -->
+          <div class="content__item content__item--size">
+            <p>
+              10. Игра «Угадай число». Предложить пользователю загадать число от 0
+              до 100 и отгадать его следующим способом: каждую итерацию цикла
+              делите диапазон чисел пополам, записываете результат в N и
+              спрашиваете у пользователя «Ваше число > N, < N или == N?». В
+              зависимости от того, что указал пользователь, уменьшаете диапазон.
+              Начальный диапазон от 0 до 100, поделили пополам и получили 50.
+              Если пользователь указал, что его число > 50, то изменили диапазон
+              на от 51 до 100. И так до тех пор, пока пользователь не выберет ==
+              N.
+            </p>
+            <button class="content__btn" data-task-id="10">перейти</button>
+          </div>
+          <!-- /.content__item -->
+        </div>
+        <!-- /.content__wrapper -->
+
+
+      </div>
+      <!-- /.content -->
+    </div>
+    <!-- /.wrapper -->
+    <!-- script -->
+    <script src="./index-hw26.js"></script>
+  </body>
+</html>

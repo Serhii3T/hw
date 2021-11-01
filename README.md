@@ -1,4 +1,5 @@
 ## help for me
+npm 
 
 ## MIME - типы шрифтов
 eot - format("embedded-opentype") - на старые IE
