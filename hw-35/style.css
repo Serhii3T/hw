@@ -1,0 +1,15 @@
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+}
+.pagination li {
+  padding: 10px;
+  background: red;
+  color: white;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.pagination li.is-active {
+  background: green;
+}

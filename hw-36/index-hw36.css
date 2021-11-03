@@ -1,0 +1,34 @@
+.jumbotron {
+  background: whitesmoke;
+  margin: 0;
+  padding: 1rem;
+}
+.jumbotron h1 {
+  text-align: center;
+}
+.jumbotron p {
+  text-align: center;
+}
+#googleMap {
+  width: 80%;
+  height: 35rem;
+  margin: 5rem auto 2rem;
+}
+
+.form-group input {
+  width: 70%;
+  margin: 1rem auto;
+}
+.btn {
+  margin: 1rem 45%;
+  padding: 0.5rem 2rem;
+}
+#output {
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+  text-align: center;
+}

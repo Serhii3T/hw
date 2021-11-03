@@ -1,0 +1,67 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+#content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+#modal__div {
+  width: 250px;
+  height: 150px;
+  background-color: lightgrey;
+  position: fixed;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 20px;
+  border-radius: 0.5rem;
+  border: 2px solid grey;
+  justify-content: center;
+  align-items: center;
+  top: 40%;
+  left: 40%;
+}
+.traffic__lights {
+  margin: auto;
+  width: 60px;
+  height: 200px;
+  padding: 10px 0;
+  padding-bottom: 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  border-radius: 0.5rem;
+}
+.traffic__light {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 2px solid lightgrey;
+  background-color: grey;
+}
+.traffic__off {
+  background-color: #555;
+}
+.traffic__red {
+  background-color: red;
+}
+.traffic__green {
+  background-color: green;
+}
+.traffic__yellow {
+  background-color: yellow;
+}
+.traffic__btn {
+  border-radius: 0.5rem;
+}

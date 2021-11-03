@@ -1,0 +1,59 @@
+
+input {
+  width: 300px;
+}
+
+.radio {
+  width: 300px;
+}
+
+#movie, #series, #episode {
+  width: 10px;
+}
+
+#result {
+  margin-top: 20px;
+}
+
+#btn {
+  cursor: pointer;
+}
+
+.film__item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  margin: 30px auto;
+  max-width: 500px;
+  border-bottom: 1px solid black;
+}
+
+.film__itemImg {
+  margin-right: 30px;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.buttons button {
+  cursor: pointer;
+}
+
+.film__tens {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.film__itemImg {
+  width: 300px;
+}
+
+.film__info {
+  max-width: 170px;
+  width: 100%;
+}

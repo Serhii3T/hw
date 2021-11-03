@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- jQuery -->
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"
+    ></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./index-hw35.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <title>AJAX</title>
+  </head>
+  <body>
+    <!-- wrapper -->
+    <div class="wrapper">
+      
+      <div class="nameFilm">
+        <input
+        type="text"
+        id="input"
+        placeholder="Введите название фильма(на английском)"
+        />
+        <button id="btn">Check</button>
+      </div>
+      
+      <div class="radio">
+        <input type="radio" name="switch" value="movie" id="movie" checked />
+        <label for="movie">Movie</label>
+        <input type="radio" name="switch" value="series" id="series" />
+        <label for="series">Series</label>
+        <input type="radio" name="switch" value="episode" id="episode" />
+        <label for="episode">Episode</label>
+      </div>
+      
+      <div id="result"></div>
+    </div>
+    <!-- /.wrapper -->
+    
+    <!-- script -->
+    <script src="./index-hw35.js" defer></script>
+  </body>
+</html>
