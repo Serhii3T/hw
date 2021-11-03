@@ -12,10 +12,10 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="jumbotron">
-      <div class="container-fluid">
-        <h1>Find the Distance</h1>
-        <p>Enter two points to find the distance and the path</p>
+    <div class="wrapper bg-white">
+      <div class="google-maps">
+        <h1 class="text-center">Finding a shortcut</h1>
+        <p class="text-center">Enter two cities to find a shortcut on the map</p>
         <form action="" class="form-horizontal">
           <div class="form-group">
             <div class="col-xs-4">
@@ -23,7 +23,7 @@
                 type=" text"
                 id="from"
                 class="form-control"
-                placeholder="origin"
+                placeholder="first place"
               />
             </div>
           </div>
@@ -33,23 +33,22 @@
                 type=" text"
                 id="to"
                 class="form-control"
-                placeholder="destination"
+                placeholder="second place"
               />
             </div>
           </div>
         </form>
         <div class="col-xs-10">
-          <button class="btn btn-info btn-lg">Calculate</button>
+          <button class="btn-form btn-lg">Get directions</button>
         </div>
       </div>
       <div class="container-fluid">
         <div id="googleMap"></div>
-        <div id="output"></div>
       </div>
     </div>
     <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvZ0nUcrNGWvVyxDm24W4236zA3nUF9cQ&callback=initMap"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiEmsKAKsKemDEdKCyGaW-Klp3XYlUQN8&callback=initMap&libraries=&v=weekly"></script>
     <script src="index-hw36.js"></script>
   </body>
 </html>

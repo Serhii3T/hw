@@ -1,34 +1,24 @@
-.jumbotron {
+.wrapper {
   background: whitesmoke;
-  margin: 0;
   padding: 1rem;
-}
-.jumbotron h1 {
-  text-align: center;
-}
-.jumbotron p {
-  text-align: center;
+  margin: 0;
 }
 #googleMap {
-  width: 80%;
-  height: 35rem;
   margin: 5rem auto 2rem;
+  height: 35rem;
+  width: 80%;
 }
 
-.form-group input {
-  width: 70%;
+.form-control {
   margin: 1rem auto;
+  width: 70%;
 }
-.btn {
-  margin: 1rem 45%;
+.btn-form {
   padding: 0.5rem 2rem;
+  margin: 1rem 45%;
+  background-color: burlywood;
 }
-#output {
-  height: 15rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-size: 1.5rem;
-  text-align: center;
+
+.btn-form:hover {
+  color: aqua;
 }

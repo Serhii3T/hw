@@ -89,5 +89,5 @@ text-opacity-75
 text-opacity-50
 text-opacity-25
 
-
-
+flex-column
+flex-row
