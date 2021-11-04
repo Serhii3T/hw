@@ -1,235 +1,209 @@
-/*Создать объект, описывающий автомобиль 
-(производитель, модель, год выпуска, средняя скорость), 
-и следующие функции для работы с этим объектом:
-Функция для вывода на экран информации об автомобиле;
-Функция для подсчета необходимого времени для преодоления 
-переданного расстояния со средней скоростью. 
-Учтите, что через каждые 4 часа дороги водителю необходимо делать перерыв на 1 час.*/
+let btn = document.querySelectorAll(".content__btn");
+let myFync = {
+  task1: function () {
+    const car = {
+      name: "BMW",
+      color: "black",
+      age: 16,
+      speed: 120,
+    };
 
-let car = {
-  developer: "Ford",
-  model: "Ford Mustang",
-  manYear: 2019,
-  avarageSpeed: 60,
-  info() {
-    let arr = [];
-    for (let i in car) {
-      arr.push(i);
-      arr.push(car[i]);
+    let myCar = function () {
+      return (
+        "Let me introduce my car:<br><br>  " +
+        "Her name is " +
+        car.name +
+        "<br>" +
+        "Her skin is " +
+        car.color +
+        "<br>" +
+        "She is " +
+        car.age +
+        "<br>" +
+        "and she can run  " +
+        car.speed +
+        " km per hour <br> <br>"
+      );
+    };
+
+    document.write(myCar());
+    //path..................
+
+    const pathToGo = {
+      path: +prompt("enter the distance you want to go..."),
+      speed: 120,
+    };
+
+    const calc = function (params) {
+      const time = params.path / params.speed;
+      const timeToRest = time / 4;
+      return time + timeToRest;
+    };
+    document.write(
+      "If you want  ride her, you will need near " +
+        parseInt(calc(pathToGo)) +
+        " hours to reach your goal"
+    );
+  },
+  task2: function () {
+    const num = {
+      numerator: prompt('enter the first numerator'),
+      denominator: prompt('enter the first denominator'),
+    };
+    const num2 = {
+      numerator: prompt('enter the second numerator'),
+      denominator: prompt('enter the second denominator'),
+    };
+
+    function Fraction(upNumber, downNumber) {
+      return { upNumber: upNumber, downNumber: downNumber };
     }
-    return arr.join("<br>");
+    let firstNumber = Fraction(num.numerator, num.denominator);
+    let secondNumber = Fraction(num2.numerator, num2.denominator);
+
+    function plusFraction(obj1, obj2) {
+      let resultUpNumber =
+        obj1.upNumber * obj2.downNumber + obj2.upNumber * obj1.downNumber;
+      let resultDownNumber =
+        (obj1.downNumber * obj2.downNumber +
+          obj2.downNumber * obj1.downNumber) /
+        2;
+      document.write(
+        `The result of addition = ${resultUpNumber}/${resultDownNumber}<br>`
+      );
+    }
+    function subtractFraction(obj1, obj2) {
+      let resultUpNumber =
+        obj1.upNumber * obj2.downNumber - obj2.upNumber * obj1.downNumber;
+      let resultDownNumber =
+        (obj1.downNumber * obj2.downNumber +
+          obj2.downNumber * obj1.downNumber) /
+        2;
+      document.write(
+        `The result of subtracting = ${resultUpNumber}/${resultDownNumber}<br>`
+      );
+    }
+    function multiFraction(obj1, obj2) {
+      let resultUpNumber = obj1.upNumber * obj2.upNumber;
+      let resultDownNumber = obj1.downNumber * obj2.downNumber;
+      document.write(
+        `The result of multiplication = ${resultUpNumber}/${resultDownNumber}<br>`
+      );
+    }
+    function divideFraction(obj1, obj2) {
+      let resultUpNumber = obj1.upNumber * obj2.downNumber;
+      let resultDownNumber = obj2.upNumber * obj1.downNumber;
+      document.write(
+        `The result of dividing = ${resultUpNumber}/${resultDownNumber}<br>`
+      );
+    }
+    function reduce(obj1, obj2) {
+      let gcd = 0;
+      let gcd2 = 0;
+
+      for (let i = 1; i <= num.numerator && i <= num.denominator; i++) {
+        if (num.numerator % i == 0 && num.denominator % i == 0) {
+          gcd = i;
+        }
+      }
+      for (let i = 1; i <= num2.numerator && i <= num2.denominator; i++) {
+        if (num2.numerator % i == 0 && num2.denominator % i == 0) {
+          gcd2 = i;
+        }
+      }
+
+      document.write(
+        `The result of reducing is:  ${num.numerator / gcd} / ${
+          num.denominator / gcd
+        } and ${num2.numerator / gcd2} / ${num2.denominator / gcd2}`
+      );
+    }
+
+    plusFraction(firstNumber, secondNumber);
+    subtractFraction(firstNumber, secondNumber);
+    multiFraction(firstNumber, secondNumber);
+    divideFraction(firstNumber, secondNumber);
+    reduce();
   },
-  journey(s = 0) {
-    let time;
-    time = s / this.avarageSpeed;
-    let rest = Math.floor(time / 4);
-    time = time + rest;
-    return time;
-  },
-  pretifyJourney(time) {
-    let h = Math.floor(time);
-    let m = Math.floor((time - h) * 60);
-    let s = Math.floor(((time - h) * 60 - Math.floor((time - h) * 60)) * 60);
-    return `${h > 9 ? h : "0" + h}
-    :${m > 9 ? m : "0" + m}
-    :${s > 9 ? s : "0" + s}`;
+  task3: function () {
+    let time = {
+      hours: 14,
+      minutes: 40,
+      seconds: 35,
+    };
+
+    const settime = function () {
+      let out = (document.getElementById(
+        'output'
+      ).innerHTML = `${time.hours}:${time.minutes}:${time.seconds}`);
+    };
+
+    const changeHours = function () {
+      let changer = +prompt('enter the hours');
+      if (changer > 24) return;
+      if (time.hours > changer || changer + time.hours - 24 < 0) {
+        let out = (document.getElementById('output2').innerHTML = `${
+          time.hours + changer
+        }:${time.minutes}:${time.seconds}`);
+      } else if (time.hours <= changer) {
+        let out = (document.getElementById('output2').innerHTML = `${
+          changer + time.hours - 24
+        }:${time.minutes}:${time.seconds}`);
+      }
+      if (changer + time.hours >= 24 && changer + time.hours - 24 < 10) {
+        out = document.getElementById('output2').innerHTML = `0${
+          changer + time.hours - 24
+        }:${time.minutes}:${time.seconds}`;
+      }
+    };
+
+    const changeMinutes = function () {
+      let changer = +prompt('enter the minutes');
+      if (changer > 60) return;
+      if (time.minutes > changer || changer + time.minutes - 60 < 0) {
+        let out = (document.getElementById('output3').innerHTML = `${
+          time.hours
+        }:${time.minutes + changer}:${time.seconds}`);
+      } else if (time.minutes <= changer) {
+        out = document.getElementById('output3').innerHTML = `${
+          time.hours + 1
+        }:${changer + time.minutes - 60}:${time.seconds}`;
+      }
+      if (changer + time.minutes >= 60 && changer + time.minutes - 60 < 10) {
+        out = document.getElementById('output3').innerHTML = `${
+          time.hours + 1
+        }:0${changer + time.minutes - 60}:${time.seconds}`;
+      }
+    };
+    const changeSeconds = function () {
+      let changer = +prompt('enter the seconds');
+      if (changer > 60) return;
+      if (time.seconds > changer || changer + time.seconds - 60 < 0) {
+        let out = (document.getElementById('output4').innerHTML = `${
+          time.hours
+        }:${time.minutes}:${time.seconds + changer}`);
+      } else if (time.seconds <= changer) {
+        out = document.getElementById('output4').innerHTML = `${time.hours}:${
+          time.minutes + 1
+        }:${changer + time.seconds - 60}`;
+      }
+      if (changer + time.seconds >= 60 && changer + time.seconds - 60 < 10) {
+        out = document.getElementById('output4').innerHTML = `${time.hours}:${
+          time.minutes + 1
+        }:0${changer + time.seconds - 60}`;
+      }
+    };
+
+    settime();
+    changeHours();
+    changeMinutes();
+    changeSeconds();
   },
 };
-car.info();
-document.getElementById(
-  "carInfo"
-).innerHTML = `<p>You have chosen the next car: ${car.info()}</p>`;
-car.pretifyJourney(car.journey(500));
 
-document.getElementById(
-  "carJourney"
-).innerHTML = `<p>You journey time in this car is: ${car.pretifyJourney(
-  car.journey(500)
-)}</p>`;
-
-/*Создать объект, хранящий в себе 
-отдельно числитель и знаменатель дроби, 
-и следующие функции для работы с этим объектом: 
-Функция сложения 2-х объектов-дробей;
-Функция вычитания 2-х объектов-дробей;
-Функция умножения 2-х объектов-дробей;
-Функция деления 2-х объектов-дробей;
-Функция сокращения объекта-дроби.*/
-
-// let fraction = {
-//   numerator: 1,
-//   denominator: 2
-// };
-
-// let frac1 = {};
-// let frac2 = {};
-// let res = {};
-// for (let key in fraction) {
-//   frac1[key] = fraction[key];
-//   frac2[key] = fraction[key];
-//   res[key] = fraction[key];
-// }
-
-// frac1.numerator = +prompt("Enter a first numerator", 0);
-// frac1.denominator = +prompt("Enter a first denumerator", 0);
-
-// frac2.numerator = +prompt("Enter a second numerator", 0);
-// frac2.denominator = +prompt("Enter a second denumerator", 0);
-// console.log(frac1.numerator);
-// console.log(frac1.denominator);
-// console.log(frac2.numerator);
-// console.log(frac2.denominator);
-
-// let addFractions = (frac1, frac2) => {
-//   let temp1 = 0;
-//   let temp2 = 0;
-//   res.denominator = frac1.denominator;
-//   res.denominator = frac1.denominator * frac2.denominator;
-//   temp1 = frac1.numerator * frac2.denominator;
-//   temp2 = frac2.numerator * frac1.denominator;
-//   res.numerator = temp1 + temp2;
-//   return `${res.numerator} / ${res.denominator}`;
-// };
-
-// let minusFractions = (frac1, frac2) => {
-//   let temp1 = 0;
-//   let temp2 = 0;
-//   res.denominator = frac1.denominator;
-//   res.denominator = frac1.denominator * frac2.denominator;
-//   temp1 = frac1.numerator * frac2.denominator;
-//   temp2 = frac2.numerator * frac1.denominator;
-//   res.numerator = temp1 - temp2;
-//   return `${res.numerator} / ${res.denominator}`;
-// };
-
-// let multiplyFractions = (frac1, frac2) => {
-//   res.denominator = frac1.denominator * frac2.denominator;
-//   res.numerator = frac1.numerator * frac2.numerator;
-//   return `${res.numerator} / ${res.denominator}`;
-// };
-// let divFractions = (frac1, frac2) => {
-//   res.denominator = frac1.denominator * frac2.numerator;
-//   res.numerator = frac1.numerator * frac2.denominator;
-//   return `${res.numerator} / ${res.denominator}`;
-// };
-// let reductionFraction = res => {
-//   let resNum;
-//   let resDen;
-//   for (let i = Math.max(res.denominator, res.numerator); i > 1; i--) {
-//     if (res.denominator % i == 0 && res.numerator % i == 0) {
-//       resNum = res.numerator / i;
-//       resDen = res.denominator / i;
-//     }
-//   }
-//   return `${resNum} / ${resDen}`;
-// };
-
-// console.log(addFractions(frac1, frac2));
-// document.getElementById("addFracs").innerHTML = `<p>${frac1.numerator}/${
-//   frac1.denominator
-// } + ${frac2.numerator}/${frac2.denominator} = ${addFractions(
-//   frac1,
-//   frac2
-// )}</p>`;
-// console.log(minusFractions(frac1, frac2));
-// document.getElementById("minusFracs").innerHTML = `<p>
-// ${frac1.numerator}/${frac1.denominator} - ${frac2.numerator}/${
-//   frac2.denominator
-// } =
-// ${minusFractions(frac1, frac2)}</p>`;
-// console.log(multiplyFractions(frac1, frac2));
-// document.getElementById("multiplyFracs").innerHTML = `<p>
-// ${frac1.numerator}/${frac1.denominator} * ${frac2.numerator}/${
-//   frac2.denominator
-// } =
-// ${multiplyFractions(frac1, frac2)}</p>`;
-// console.log(divFractions(frac1, frac2));
-// document.getElementById("divideFracs").innerHTML = `<p>
-// ${frac1.numerator}/${frac1.denominator} / ${frac2.numerator}/${
-//   frac2.denominator
-// } =
-// ${divFractions(frac1, frac2)}</p>`;
-// console.log(reductionFraction(res));
-// document.getElementById("reductionFracs").innerHTML = `<p>
-// ${res.numerator}/${res.denominator} =
-// ${reductionFraction(res)}</p>`;
-
-/* Создать объект, описывающий время (часы, минуты, секунды), и следующие функции для работы с этим объектом: 
-Функция вывода времени на экран;
-Функция изменения времени на переданное количество секунд;
-Функция изменения времени на переданное количество минут;
-Функция изменения времени на переданное количество часов. 
-Учтите, что в последних 3-х функциях, при изменении одной 
-части времени, может измениться и другая. Например, если 
-ко времени «20:30:45» добавить 30 секунд, то должно 
-получиться «20:31:15», а не «20:30:75».*/
-
-// let time = {
-//   hours: 1,
-//   minutes: 1,
-//   seconds: 1,
-//   days: 0,
-
-//   show() {
-//     alert(`${this.days}:${this.hours}:${this.minutes}:${this.seconds}`);
-//   },
-
-//   changeSeconds(sec) {
-//     let h = sec / 3600;
-//     this.hours += Math.floor(h);
-//     let m = (sec - Math.floor(h) * 3600) / 60;
-//     this.minutes += Math.floor(m);
-//     this.seconds += sec - Math.floor(h) * 3600 - Math.floor(m) * 60;
-
-//     let d = 0;
-//     if (this.seconds >= 60) {
-//       this.seconds %= 60;
-//       this.minutes += Math.floor(this.seconds / 60);
-//     }
-//     if (this.minutes >= 60) {
-//       this.minutes %= 60;
-//       this.hours += Math.floor(this.minutes / 60);
-//     }
-//     if (this.hours > 23) {
-//       this.hours %= 24;
-//       this.days = Math.floor(this.hours / 24);
-//     }
-//     return time;
-//   },
-
-//   changeMinutes(min) {
-//     let h = min / 60;
-//     this.hours += Math.floor(h);
-//     this.minutes += min - Math.floor(h) * 60;
-//     if (this.minutes >= 60) {
-//       this.minutes %= 60;
-//       this.hours += Math.floor(h / 60);
-//     }
-//     if (this.hours > 23) {
-//       this.hours %= 24;
-//       this.days = Math.floor(this.hours / 24);
-//     }
-//     return time;
-//   },
-
-//   changeHours(hour) {
-//     this.hours = (this.hours + hour) % 24;
-//     let d = 0;
-//     if (this.hours > 23) {
-//       this.days = Math.floor(this.hours / 24);
-//     }
-//     return time;
-//   }
-// };
-
-// time.hours = +prompt("Enter hours", 0);
-// time.minutes = +prompt("Enter minutes", 0);
-// time.seconds = +prompt("Enter seconds", 0);
-
-// time.show();
-// console.log(time.changeSeconds(3600));
-// time.show();
-// console.log(time.changeMinutes(1400));
-// time.show();
-// console.log(time.changeHours(45));
-// time.show();
+for (let i = 0; i < btn.length; i++) {
+  btn[i].addEventListener("click", (element) => {
+    let idTask = "task" + element.target.getAttribute("data-task-id");
+    myFync[idTask]();
+  });
+}
