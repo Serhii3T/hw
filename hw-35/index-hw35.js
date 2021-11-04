@@ -7,7 +7,27 @@ function createItemFilm(data) {
           <h5>` + data.year + `</h5>
           <button class="btn-details" data-id-film="` + data.imdbid + `">Details</button>
           <div class="details-block details-id-` + data.imdbid + `"></div>
+          <button class="btn-favorite btn-favorite-id-` + data.imdbid + `" data-id-favorite="` + data.imdbid + `">Favorite</button>
       </div>`).appendTo('.response');
+}
+
+// Для домашнего задания по теме AJAX реализовать функционал страницы favorite movies, используя для хранения избранных фильмов localStorage. 
+function addFavorite() {
+    $('.btn-favorite').on('click', function () {
+        $(this).toggleClass('active');
+        let getFavoriteByArray = JSON.parse(localStorage.getItem("favoriteItems")) != null ? JSON.parse(localStorage.getItem("favoriteItems")) : [];
+        let checkIdInArr = (getFavoriteByArray.indexOf($(this).data('id-favorite')) > -1);
+        !checkIdInArr ? getFavoriteByArray.push($(this).data('id-favorite')) : getFavoriteByArray.splice($.inArray($(this).data('id-favorite'), getFavoriteByArray), 1);
+        let stringStorage = JSON.stringify(getFavoriteByArray);
+        localStorage.setItem("favoriteItems", stringStorage);
+    });
+
+    let arrFav = JSON.parse(localStorage.getItem("favoriteItems"));
+    if(arrFav.length != 0) {
+        $.each(arrFav, function(index, value) {
+            $('.btn-favorite-id-'+value).addClass('active');
+        });
+    }
 }
 
 function addDetails(data) {
@@ -94,6 +114,7 @@ clearLocalStorage();
 $('.form-search input').on('change', function () {
   clearLocalStorage()
 });
+
 $('.form-search').on('submit', function (event) {
   event.preventDefault();
   let urlApi = 'https://www.omdbapi.com/?apikey=bf73a1d2&';
@@ -127,6 +148,7 @@ $('.form-search').on('submit', function (event) {
               requestEventDetails();
               createPagination(countLinksPagination, response.totalResults);
               eventClickPagination();
+              addFavorite();
           } else {
               $('.pagination').html('');
               $('.title-header').text(response.Error);

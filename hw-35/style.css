@@ -13,3 +13,7 @@
 .pagination li.is-active {
   background: green;
 }
+
+.active {
+  background:red;
+}
