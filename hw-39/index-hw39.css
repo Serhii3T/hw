@@ -1,0 +1,175 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1500px;
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* header */
+.header {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.header__btn {
+  background-color: black;
+  display: inline-block;
+  text-decoration: none;
+  color: yellow;
+  padding: 20px;
+}
+
+.col {
+  border-radius: 7px;
+  position: relative;
+  max-width: 146px;
+  cursor: pointer;
+  margin: 10px;
+  width: 100%;
+  padding: 0;
+}
+
+.front,
+.back,
+.square,
+.square-p,
+.diamond {
+  backface-visibility: hidden;
+  transition: 0.6s linear;
+}
+
+.front {
+  transform: perspective(146px) rotateY(0deg);
+}
+
+.back {
+  transform: perspective(146px) rotateY(180deg);
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: wheat;
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.col:hover > .front {
+  transform: perspective(146px) rotateY(-180deg);
+}
+
+.col:hover > .back {
+  transform: perspective(146px) rotateY(0deg);
+}
+
+/* heart */
+.square,
+.circle1,
+.circle2 {
+  background-color: tomato;
+  height: 30px;
+  width: 30px;
+}
+
+.square {
+  transform: rotate(45deg);
+}
+
+.circle1,
+.circle2,
+.circle1-p,
+.circle2-p {
+  border-radius: 50%;
+}
+
+.circle1 {
+  margin: -40px 0 -30px -10px;
+}
+
+.circle2 {
+  margin: -30px -10px 0 10px;
+}
+
+/* diamond */
+.diamond {
+  background-color: tomato;
+  transform: rotate(45deg);
+  height: 40px;
+  width: 40px;
+}
+
+/* cross */
+.cross {
+  background: linear-gradient(to right bottom, transparent 50%, black 50%) left / 50% 100% no-repeat, linear-gradient(to left bottom, transparent 50%, black 50%) right / 50% 100% no-repeat;
+  position: relative;
+  height: 20px;
+  width: 20px;
+}
+
+.circle1b,
+.circle2b,
+.circle3b {
+  background-color: black;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+
+.circle1b {
+  margin: -10px 0px -10px 0px;
+}
+
+.circle2b {
+  margin: 0px 0px -30px -10px;
+}
+
+.circle3b {
+  margin: 10px -10px -10px 10px;
+}
+
+/* pike */
+.suit-p {
+  margin-right: -7px;
+}
+
+.square-p,
+.circle1-p,
+.circle2-p {
+  background-color: black;
+  height: 25px;
+  width: 25px;
+}
+
+.cross-p {
+  background: linear-gradient(to right bottom, transparent 50%, black 50%) left / 50% 100% no-repeat, linear-gradient(to left bottom, transparent 50%, black 50%) right / 50% 100% no-repeat;
+  position: relative;
+  margin-top: -7px;
+  height: 14px;
+  width: 24px;
+}
+
+.square-p {
+  transform: rotate(45deg);
+}
+
+.circle1-p {
+  margin: -15px 0px 0px 10px;
+}
+
+.circle2-p {
+  margin: -25px 0px 0px -10px;
+}
