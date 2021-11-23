@@ -1,246 +1,163 @@
-// Реализовать класс, описывающий окружность. В классе должны быть следующие компоненты:
+'use strict';
 
-//   *поле, хранящее радиус окружности;
-//   *get-свойство, возвращающее радиус окружности;
-//   *set-свойство, устанавливающее радиус окружности;
-//   *get-свойство, возвращающее диаметр окружности;
-//   *метод, вычисляющий площадь окружности;
-//   *метод, вычисляющий длину окружности.
-//---------------------------------------------------------------------------------
+// Реализовать класс, описывающий окружность.
 
-class Ring {
-  constructor(r) {
-    this.r = r;
-  }
-  get radius() {
-    return this.r;
-  }
-  set radius(r) {
-    this.r = r;
-  }
-  get d() {
-    return this.r * 2;
-  }
-  area() {
-    return Math.PI * this.r * this.r;
-  }
-  circumference() {
-    return Math.PI * this.r * 2;
-  }
-}
-
-let ring = new Ring(5);
-console.log(ring.radius);
-console.log(ring.d);
-console.log(ring.area().toFixed(2));
-console.log(ring.circumference().toFixed(2));
-
-// Реализовать класс, описывающий простой маркер. В классе должны быть следующие компоненты:
-
-//     *поле, которое хранит цвет маркера;
-//     *поле, которое хранит количество чернил в маркере (в процентах);
-
-//     *метод для печати (метод принимает строку
-//      и выводит текст соответствующим цветом;
-//      текст выводится до тех пор, пока в маркере
-//      есть чернила; один не пробельный символ –
-//      это 0,5% чернил в маркере).
-
-// Реализовать класс, описывающий заправляющийся маркер,
-// унаследовав его от простого маркера и добавив метод для заправки маркера.
-// Продемонстрировать работу написанных методов.
-//-------------------------------------------------------------------------------------------
-
-class Marker {
-  constructor(c, p) {
-    this.c = c;
-    this.p = p;
-  }
-  get markerProps() {
-    return [this.c, this.p];
-  }
-
-  set markerProps(newProps) {
-    [this.c, this.p] = [...newProps];
-  }
-
-  print(line) {
-    let t = document.getElementById("content");
-    for (let i = 0; i < line.length; i++) {
-      if (this.p != 0) {
-        if (line[i] == " ") {
-          this.p += 0.5;
-        }
-        t.innerHTML += line[i];
-        t.style.color = this.c;
-        this.p -= 0.5;
-      } else {
-        document.write("Marker is over");
-        break;
-      }
+class circle {
+    constructor (radius) {
+        this.radius = radius;
     }
-  }
+
+    get radius() {
+        return this._radius;
+    }
+
+    set radius(radius) {
+        this._radius = radius;
+    }
+
+    diametre() {
+        return this._radius * 2;
+    }
+    
+    sqare() {
+        return 3.14 * Math.pow(this.radius, 2);
+    }
+
+    length() {
+        return 2 * 3.14 * this.radius;
+    }
+    
 }
 
-class FilledMarker extends Marker {
-  fill(p) {
-    if (p > 100) {
-      p = 100;
+function showResult(res) {
+    const firstDiv = document.getElementById('firstDiv');
+    const par = document.createElement('p');
+    par.append(res);
+    firstDiv.append(par);
+}
+
+const butt1 = document.getElementById('butt1');
+
+butt1.addEventListener('click', () =>{
+    const radius = document.getElementById('input1');
+    const radiusValue = +radius.value;
+
+    if (isNaN(radiusValue)) {
+        showResult('Не число');
     } else {
-      this.p += p;
+        const firstCircle = new circle(radiusValue);
+    
+        for (const key in firstCircle) {
+            showResult(`${key}: ${firstCircle[key]}`);
+        }
+    
+        const diametre = firstCircle.diametre();
+        showResult(`diametre: ${diametre}`);
+        const sqare = firstCircle.sqare();
+        showResult(`sqare: ${sqare}`);
+        const length = firstCircle.length();
+        showResult(`length circle: ${length}`);
     }
-  }
+
+});
+
+
+// Реализовать класс, описывающий простой маркер.
+
+
+class marker {
+    constructor (color, ink) {
+        this.color = color;
+        this.ink = ink;
+    }
+
+    printText(str) {
+        const result2 = document.getElementById('result2');
+        const par = document.createElement('p');
+        
+        let strFinal = '';
+        let strLength = this.ink / 0.5;
+
+        for (let i = 0; i < strLength; i++) {
+            if (str.charAt(i) == ' ') {
+                strLength += 1;
+            }
+            strFinal += str.charAt(i);
+        }
+            par.append(strFinal);
+            par.style.color = this.color;
+            result2.append(par);
+    }
 }
 
-let marker = new FilledMarker("#838", 2);
+const butt2 = document.getElementById('butt2');
 
-marker.fill(31);
+butt2.addEventListener('click', () => {
+    const input21 = document.getElementById('input21');
+    const input22 = document.getElementById('input22');
+    const input23 = document.getElementById('input23');
 
-const l = `List of Software Inc. workers with names, positions, departments, salaries. Best Regards Jeremy Clarkson - HR Manager of the HR Department`;
 
-marker.print(l);
-document.body.setAttribute("style", "font-size: 18px; text-align: center;");
-// Реализовать класс Employee, описывающий
-// работника, и создать массив работников банка.
+    const input23Value = +input23.value;
+    
+    const input22Value = String(input22.value);
+    const inputValue = String(input21.value);
 
-// Реализовать класс EmpTable для генерации
-// HTML-кода таблицы со списком работников банка.
-// Массив работников необходимо передавать через
-// конструктор, а получать HTML-код с помощью метода getHtml().
+    const newMarker = new marker(input22Value, input23Value);
+    newMarker.printText(inputValue);
+    
+});
 
-// Создать объект класса EmpTable и
-// вывести на экран результат
-// работы метода getHtml().
-
-const mainDiv = document.getElementById("content");
-
-const tableDiv = document.createElement("div");
-tableDiv.setAttribute("id", "content__tableDiv");
-tableDiv.className = "content__tableDiv";
-
-const tableTag = document.createElement("table");
-tableTag.setAttribute("id", "content__table");
-tableTag.className = "content__table";
-
-tableDiv.append(tableTag);
-mainDiv.append(tableDiv);
+// Реализовать класс Employee, описывающий работника, и создать массив работников банка
 
 class Employee {
-  constructor(name, position, department, salary) {
-    this.name = name;
-    this.position = position;
-    this.department = department;
-    this.salary = salary;
-  }
-}
-const arrEmp = [
-  new Employee("John Doe", "Manager", "Sales", 5000),
-  new Employee("Bill Freeman", "Manager", "Sales", 5000),
-  new Employee("Uno Dirck", "Manager", "Sales", 5000),
-  new Employee("Erick Rapid", "Manager", "Sales", 5000),
-  new Employee("Chris Rea", "Manager", "Sales", 5000),
-  new Employee("Tommy Lee", "Manager", "Sales", 5000),
-  new Employee("Jeck Ward", "DevOps Engineer", "DevOps", 3500),
-  new Employee(
-    "Rick Depper",
-    ".Net Senior Developer",
-    "Desktop Solutions",
-    4000
-  ),
-  new Employee("Neo Matrix", "Team Lead", "Desktop Solutions", 5000),
-  new Employee(
-    "Trinity Matrix",
-    ".Net Senior Developer",
-    "Desktop Solutions",
-    4000
-  ),
-  new Employee(
-    "Rick Grouy",
-    ".Net Junior Developer",
-    "Desktop Solutions",
-    1000
-  ),
-  new Employee(
-    "George McCalister",
-    ".Net Junior Developer",
-    "Desktop Solutions",
-    1000
-  ),
-  new Employee(
-    "Fred Durst",
-    ".Net Junior Developer",
-    "Desktop Solutions",
-    1000
-  ),
-  new Employee(
-    "Piter Parker",
-    ".Net Middle Developer",
-    "Desktop Solutions",
-    4000
-  ),
-  new Employee(
-    "Bro Somebody",
-    ".Net Senior Developer",
-    "Desktop Solutions",
-    4000
-  ),
-  new Employee(
-    "Merlin Mysterier",
-    ".Net Middle Developer",
-    "Desktop Solutions",
-    4000
-  ),
-  new Employee(
-    "Harry Potter",
-    ".Net Senior Developer",
-    "Desktop Solutions",
-    4000
-  ),
-  new Employee(
-    "Norton Commander",
-    ".Net Middle Developer",
-    "Desktop Solutions",
-    4000
-  ),
-  new Employee("Elon Musk", ".Net Senior Developer", "Desktop Solutions", 4000)
-];
-class EmpTable {
-  constructor(arr) {
-    this.arr = arr;
-  }
-  getHtml() {
-    const table = document.getElementById("content__table");
-    const array = this.arr;
-    const head = document.createElement("tr");
-    head.setAttribute("style", "font-size: 18px;");
-    const th1 = document.createElement("th");
-    th1.textContent = "Name";
-    const th2 = document.createElement("th");
-    th2.textContent = "Position";
-    const th3 = document.createElement("th");
-    th3.textContent = "Department";
-    const th4 = document.createElement("th");
-    th4.textContent = "Salary ($)";
-    head.append(th1);
-    head.append(th2);
-    head.append(th3);
-    head.append(th4);
-    table.append(head);
-    for (let i in array) {
-      let tr = document.createElement("tr");
-      table.append(tr);
-      for (let j in array[i]) {
-        let td = document.createElement("td");
-        td.textContent = array[i][j];
-        tr.append(td);
-        td.setAttribute("style", "padding: 5px 10px; font-size: 18px;");
-      }
+    constructor(name, age, growth) {
+        this.name = name;
+        this.age = age;
+        this.growth = growth;
     }
-    table.setAttribute("border", "2");
-    table.setAttribute("bordercolor", "brown");
-    table.setAttribute("width", "60%");
-    table.setAttribute("style", "margin: auto; background-color: lightgrey;");
-  }
+};
+
+const firstEmployee = new Employee('Alex', 23, 193);
+const secondEmployee = new Employee('John', 32, 173);
+const thirdEmployee = new Employee('David', 17, 185);
+
+const arrEmployees = [firstEmployee, secondEmployee, thirdEmployee];
+
+const table = document.getElementById('table');
+
+class empTable {
+    constructor(emplArr) {
+        this.employee = emplArr;
+    }
+
+    getHtml(emplArr) {
+        let th = emplArr[0];
+        let tr = document.createElement('tr');
+        table.append(tr);
+
+        for (const key in th) {
+            let td = document.createElement('td');
+            td.classList.add('table__td')
+            td.append(key);
+            tr.append(td);
+        }
+        for (let i = 0; i < emplArr.length; i++) {
+            let tr = document.createElement('tr');
+            table.append(tr);
+            for (const key in emplArr[i]) {
+                let td = document.createElement('td')
+                td.classList.add('table__td')
+                td.append(emplArr[i][key])
+                tr.append(td);
+            }
+        }
+    }
 }
-const tableObj = new EmpTable(arrEmp);
-tableObj.getHtml();
+
+const butt3 = document.getElementById('butt3');
+butt3.addEventListener('click', () => {
+    const empGenHtml = new empTable(arrEmployees);
+
+    empGenHtml.getHtml(arrEmployees);
+});

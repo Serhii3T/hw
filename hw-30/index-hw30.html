@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Beetroot Home Task 28 - JS Classes</title>
-  </head>
-  <body>
-    <div id="content"></div>
-    <script src="main.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Classes</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <p>
+        1) Реализовать класс, описывающий окружность. В классе должны быть следующие компоненты:<br>
+        поле, хранящее радиус окружности;<br>
+        get-свойство, возвращающее радиус окружности;<br>
+        set-свойство, устанавливающее радиус окружности;<br>
+        get-свойство, возвращающее диаметр окружности;<br>
+        метод, вычисляющий площадь окружности;<br>
+        метод, вычисляющий длину окружности.<br>
+        Продемонстрировать работу свойств и методов. 
+    </p>
+    <input type="text" name="input1" id="input1" placeholder="Введите радиус окружности">
+    <button id="butt1">Check</button>
+    <div id="firstDiv"></div>
+    <hr>
+    <p>
+        2) Реализовать класс, описывающий простой маркер. В классе должны быть следующие компоненты:
+
+        поле, которое хранит цвет маркера;
+        поле, которое хранит количество чернил в маркере (в процентах);
+        метод для печати (метод принимает строку и выводит текст соответствующим цветом; текст выводится до тех пор, пока в маркере есть чернила; один не пробельный символ – это 0,5% чернил в маркере).
+        Реализовать класс, описывающий заправляющийся маркер, унаследовав его от простого маркера и добавив метод для заправки маркера.
+
+        Продемонстрировать работу написанных методов. 
+    </p>
+    <input type="text" id="input21" placeholder="Введите строку">
+    <input type="text" id="input22" placeholder="Введите цвет(по английски)">
+    <input type="text" id="input23" placeholder="Введите количество черрил(в процентах)">
+    <button id="butt2">Check</button>
+    <div id="result2"> &nbsp; </div>
+    <hr>
+    <p>
+        3) Реализовать класс Employee, описывающий работника, и создать массив работников банка.<br>
+
+        Реализовать класс EmpTable для генерации HTML-кода таблицы со списком работников банка. Массив работников необходимо передавать через конструктор, а получать HTML-код с помощью метода getHtml().<br>
+        
+        Создать объект класса EmpTable и вывести на экран результат работы метода getHtml().
+    </p>
+    <button id="butt3">Check</button>
+    <table id="table">
+
+    </table>
+</body>
 </html>
