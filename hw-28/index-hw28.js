@@ -10,24 +10,23 @@ let myFync = {
 
     let myCar = function () {
       return (
-        "Let me introduce my car:<br><br>  " +
-        "Her name is " +
+        "My car:<br><br>  " +
+        "Name is " +
         car.name +
         "<br>" +
-        "Her skin is " +
+        "Skin is " +
         car.color +
         "<br>" +
-        "She is " +
+        "Age is " +
         car.age +
         "<br>" +
-        "and she can run  " +
+        "and car can run  " +
         car.speed +
         " km per hour <br> <br>"
       );
     };
 
     document.write(myCar());
-    //path..................
 
     const pathToGo = {
       path: +prompt("enter the distance you want to go..."),

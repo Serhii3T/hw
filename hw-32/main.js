@@ -31,7 +31,7 @@ resizer.addEventListener("mousedown", initResize);
 
 document.body.addEventListener("keydown", (event) => {
   const resizer = document.createElement("div");
-  if ((event.code === "KeyE" || event.code === "Comma") && event.ctrlKey) {
+  if ((event.code === "KeyE" || event.code === "KeyQ") && event.ctrlKey) {
     event.returnValue = false;
     let elem = document.querySelector(".content__textarea");
     if (event.code === "KeyE" && elem.nodeName === "DIV") {
@@ -41,7 +41,7 @@ document.body.addEventListener("keydown", (event) => {
       newEl.className = "content__textarea";
       newEl.textContent = elem.textContent;
       elem.replaceWith(newEl);
-    } else if (event.code === "Comma" && elem.nodeName === "TEXTAREA") {
+    } else if (event.code === "KeyQ" && elem.nodeName === "TEXTAREA") {
       let newEl = document.createElement("div");
       newEl.className = "content__textarea";
       newEl.textContent = elem.value;
@@ -107,68 +107,9 @@ const arrEmp = [
   new Employee("Chris Rea", "Manager", "Sales", 5000),
   new Employee("Tommy Lee", "Manager", "Sales", 5000),
   new Employee("Jeck Ward", "DevOps Engineer", "DevOps", 3500),
-  new Employee(
-    "Rick Depper",
-    ".Net Senior Developer",
-    "Desktop Solutions",
-    4000
-  ),
+  new Employee("Rick Depper", ".Net Senior Developer", "Desktop Solutions", 4000),
   new Employee("Neo Matrix", "Team Lead", "Desktop Solutions", 5000),
-  new Employee(
-    "Trinity Matrix",
-    ".Net Senior Developer",
-    "Desktop Solutions",
-    4000
-  ),
-  new Employee(
-    "Rick Grouy",
-    ".Net Junior Developer",
-    "Desktop Solutions",
-    1000
-  ),
-  new Employee(
-    "George McCalister",
-    ".Net Junior Developer",
-    "Desktop Solutions",
-    1000
-  ),
-  new Employee(
-    "Fred Durst",
-    ".Net Junior Developer",
-    "Desktop Solutions",
-    1000
-  ),
-  new Employee(
-    "Piter Parker",
-    ".Net Middle Developer",
-    "Desktop Solutions",
-    4000
-  ),
-  new Employee(
-    "Bro Somebody",
-    ".Net Senior Developer",
-    "Desktop Solutions",
-    4000
-  ),
-  new Employee(
-    "Merlin Mysterier",
-    ".Net Middle Developer",
-    "Desktop Solutions",
-    4000
-  ),
-  new Employee(
-    "Harry Potter",
-    ".Net Senior Developer",
-    "Desktop Solutions",
-    4000
-  ),
-  new Employee(
-    "Norton Commander",
-    ".Net Middle Developer",
-    "Desktop Solutions",
-    4000
-  ),
-  new Employee("Elon Musk", ".Net Senior Developer", "Desktop Solutions", 4000)
+  new Employee("Trinity Matrix", ".Net Senior Developer", "Desktop Solutions", 4000),
 ];
 class EmpTable {
   constructor(arr) {

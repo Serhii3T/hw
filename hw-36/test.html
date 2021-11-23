@@ -1,54 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index-hw36.css" />
-    <title>Document</title>
+    <title>Directions Service (Complex)</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" href="./test.css">
   </head>
   <body>
-    <div class="wrapper bg-white">
-      <div class="google-maps">
-        <h1 class="text-center">Finding a shortcut</h1>
-        <p class="text-center">Enter two cities to find a shortcut on the map</p>
-        <form action="" class="form-horizontal">
-          <div class="form-group">
-            <div class="col-xs-4">
-              <input
-                type=" text"
-                id="from"
-                class="form-control"
-                placeholder="first place"
-              />
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-xs-4">
-              <input
-                type=" text"
-                id="to"
-                class="form-control"
-                placeholder="second place"
-              />
-            </div>
-          </div>
-        </form>
-        <div class="col-xs-10">
-          <button class="btn-form btn-lg">Get directions</button>
-        </div>
-      </div>
-      <div class="container-fluid">
-        <div id="googleMap"></div>
-      </div>
+    <div id="floating-panel">
+      <b>Start: </b>
+      <select id="start">
+        <option value="Poltava">Poltava</option>
+        <option value="Moscva">
+          Moscva
+        </option>
+        <option value="625 8th Avenue, New York, NY, 10018">
+          Port Authority Bus Terminal
+        </option>
+        <option value="staten island ferry terminal, new york, ny">
+          Staten Island Ferry Terminal
+        </option>
+        <option value="101 E 125th Street, New York, NY">
+          Harlem - 125th St Station
+        </option>
+      </select>
+      <b>End: </b>
+      <select id="end">
+        <option value="Kharkiv">Kharkiv</option>
+        <option value="Wroclaw">
+          Wroclaw
+        </option>
+        <option value="moma, New York, NY">MOMA</option>
+        <option value="350 5th Ave, New York, NY, 10118">
+          Empire State Building
+        </option>
+        <option value="253 West 125th Street, New York, NY">
+          Apollo Theater
+        </option>
+        <option value="1 Wall St, New York, NY">Wall St</option>
+      </select>
     </div>
-    <!-- scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiEmsKAKsKemDEdKCyGaW-Klp3XYlUQN8&callback=initMap&libraries=&v=weekly"></script>
-    <script src="index-hw36.js"></script>
+    <div id="map"></div>
+    &nbsp;
+    <div id="warnings-panel"></div>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvZ0nUcrNGWvVyxDm24W4236zA3nUF9cQ&callback=initMap&libraries=&v=weekly"></script>
+    <script src="./test.js"></script>
   </body>
 </html>

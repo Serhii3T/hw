@@ -3,7 +3,7 @@
   padding: 1rem;
   margin: 0;
 }
-#googleMap {
+#map {
   margin: 5rem auto 2rem;
   height: 35rem;
   width: 80%;
@@ -21,4 +21,21 @@
 
 .btn-form:hover {
   color: aqua;
+}
+
+
+.map-title {
+  display: flex;
+}
+
+.map-title__image img {
+  width: 330px;
+}
+
+.map-title__info {
+  margin-left: 10px;
+}
+
+.firstHeading {
+  font-size: 25px;
 }

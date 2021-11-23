@@ -41,9 +41,9 @@ shoppingList.forEach(function (element) {
     theMostExpensiveName = element.name;
   }
 });
-document.write('<ul style="text-align:center;">');
+document.write('<ul style="text-align:center; list-style:none;">');
 shoppingList.forEach((goods) => {
-  document.write(`<li style="list-style:none;">${goods.name}:  ${goods.price}$
+  document.write(`<li>${goods.name}:  ${goods.price}$
         <br>`);
 });
 document.write(` <br> Sum = ${parseInt(sum)}`);

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 2rem;
+        background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      }
+    </style>
+    <div id="content"></div>
+    <script>
+      class Marker {
+        constructor(color, ink) {
+          this.color = color;
+          this.ink = ink;
+        }
+
+        print(string) {
+          let text = document.getElementById('content');
+          for (let i = 0; i < string.length; i++) {
+            if (this.ink != 0) {
+              if (string[i] == ' ') {
+                this.ink += 0.5;
+              }
+              text.innerHTML += string[i];
+              text.style.color = this.color;
+              this.ink -= 0.5;
+            } else {
+              document.write('<br>marker is over...');
+              break;
+            }
+          }
+        }
+      }
+      class FilledMarker extends Marker {
+        fill(ink) {
+          if (ink > 100) {
+            ink = 100;
+          } else {
+            this.ink += ink;
+          }
+        }
+      }
+      const marker = new FilledMarker('#fff', 2);
+
+      marker.fill(37);
+
+      const printText = `Tell me what thy lordly name is on the Nights Plutonian shore!”
+            Quoth the Raven “Nevermore.” `;
+
+      marker.print(printText);
+   
+    </script>
+  </body>
+</html>

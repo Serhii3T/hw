@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1500px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.title {
+  justify-content: center;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.homework__item {
+  list-style-position: inside;
+}
+
+.homework__out {
+  margin: 20px;
+}
