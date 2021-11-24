@@ -20,6 +20,14 @@
   list-style-position: inside;
 }
 
-.homework__out {
+.homework__out,
+.list-no-buy {
   margin: 20px;
+  display: flex;
+  list-style: none;
+}
+
+.homework__out li,
+.list-no-buy li {
+  width: 33%;
 }
