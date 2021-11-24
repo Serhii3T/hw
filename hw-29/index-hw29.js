@@ -92,7 +92,7 @@ function createList() {
           <button class="delete" data-key-name=` + shoppingList[i].name + `>Delete</button>
       </li>`).appendTo('.homework__out');
     };
-    afterCreateListAddEvents();
+    // afterCreateListAddEvents();
 }
 
 function createListNoBuy() {
